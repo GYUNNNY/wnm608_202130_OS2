@@ -3,33 +3,37 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>product_page</title>
+   <title>product webpage</title>
+
    <link rel="stylesheet" href="lib/css/styleguide.css">
    <link rel="stylesheet" href="css/storetheme.css">
 </head>
 <body>
+   
+   <!-- header>h1+p -->
+   <!-- cmd + / -->
    <header class="navbar">
-        <div class="container display-flex flex-aligh-center">
-           <div>
-              <h1>Coffee Shop</h1>
-           </div>
+      <div class="container display-flex flex-align-center">
+         <div class="flex-none">
+            <h1>Coffee Shop</h1>
+         </div>
 
-           <nav class="nav flex-none">
-              <ul class="display-flex">
-                 <li><a href="#article1">COFFEE</a></li>
-                 <li><a href="#article2">GIFTS</a></li>
-                 <li><a href="#article3">OUR STORY</a></li>
-                 <li><a href="#article4">CAFÉS</a></li>
-              </ul>
-           </nav>
-        </div>
+         <div class="flex-stretch"></div>
+
+         <!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
+         <nav class="nav flex-none">
+            <ul class="display-flex">
+               <li><a href="#article1">Link 1</a></li>
+               <li><a href="#article2">Link 2</a></li>
+               <li><a href="#article3">Link 3</a></li>
+               <li><a href="#article4">Link 4</a></li>
+            </ul>
+         </nav>
+      </div>
    </header>
 
-   <div class="view-window" style="background-image: url(https://content.fortune.com/wp-content/uploads/2019/06/cups-of-coffee-pattern.jpg)">
-     
-      <h2>PRODUCT</h2>
-   </div>
 
+   <!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*4>lorem40 -->
    <div class="container">
       <article id="article1" class="article card soft">
          <h2>Article 1</h2>
@@ -41,6 +45,10 @@
          </div>
       </article>
    </div>
+
+      <div class="view-window" style="">
+         <h2>PRODUCT</h2>
+      </div>
 
    <div class="container">
       <article id="article2" class="article card hard">
@@ -61,7 +69,15 @@
             <p>Dignissimos itaque eum cumque dolores iste unde illum ipsa architecto, asperiores quasi alias! Soluta sequi voluptatem dolor, consequuntur aut at quas excepturi assumenda amet officiis ipsam temporibus inventore maxime, ipsum ab? Cumque quibusdam tenetur quos nobis? Nam, nesciunt omnis eligendi!</p>
          </div>
       </article>
-      
+      <article id="article4" class="article card">
+         <h2>Article 4</h2>
+         <div class="article-body">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore saepe laborum dicta, asperiores ex nihil id, enim sapiente corrupti debitis eum ducimus non, praesentium cum. Doloremque quisquam natus, inventore unde aut, libero pariatur. Molestiae, fuga maiores, error iusto atque deserunt.</p>
+            <p>Neque, dicta. Numquam, aut at quis minima optio dicta eius minus earum veritatis obcaecati deserunt molestiae vitae dolor aliquam ex aliquid architecto tempore itaque quae quod a! Autem dolores, harum nemo perspiciatis laboriosam beatae rem minima quam repellendus eum temporibus.</p>
+            <p>Dolorem, recusandae, quos quas qui maiores voluptas repellendus in! Eaque et dolorum, animi? Quas architecto optio excepturi! Inventore obcaecati consectetur, repudiandae ratione quaerat dolores esse at maxime impedit assumenda alias, qui perferendis, minus necessitatibus magnam asperiores dolorem? Numquam provident, deleniti!</p>
+            <p>Necessitatibus deleniti labore iste nam nobis voluptatem accusamus, modi qui non mollitia reiciendis natus sint veniam maxime provident dolore fugit asperiores unde eos nesciunt velit? Atque similique voluptatem, est delectus, explicabo consequatur autem, impedit, recusandae unde quae laboriosam libero repellendus?</p>
+         </div>
+      </article>
    </div>
 
 </body>

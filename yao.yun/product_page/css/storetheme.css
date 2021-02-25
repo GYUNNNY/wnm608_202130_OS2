@@ -1,0 +1,41 @@
+.card {
+    background-color: var(--color-white);
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    position: relative;
+    overflow: hidden;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+user agent stylesheet
+article {
+    display: block;
+}
+body {
+    margin: 0;
+    font-size: 100%;
+    font-family: var(--font-sans);
+}
+:root {
+    --color-neutral-light: #e9e2e5;
+    --color-neutral-medium: #94888e;
+    --color-neutral-dark: #4a3f43;
+}
+:root {
+    --color-neutral-light: #e4e2e9;
+    --color-neutral-medium: #8c8894;
+    --color-neutral-dark: #423f4a;
+    --color-white: #fff;
+    --color-black: #111;
+    --header-height: 3rem;
+    --font-sans: Helvetica, Arial, sans-serif;
+    --font-serif: Cambria, Georgia, "Times New Roman", serif;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
