@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styleguide</title>
+    
+    <!--<base href="/aau/wnm608/yao.yun/product_page/">-->
+    <base href="../">
+    <link rel="stylesheet" href="lib/css/styleguide.css">
+    <link rel="stylesheet" href="css/storetheme.css">
+    <link rel="stylesheet" href="lib/css/gridsystem.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+</head>
+
+
+<header class="navbar">
+   <div class="container display-flex flex-align-center">
+      <div class="flex-none">
+         <h1>Styleguide</h1>
+      </div>
+      <div class="flex-stretch"></div>
+      <nav class="nav flex-none">
+         
+      </nav>
+   </div>
+</header>
+
+
+<div class="container">
+   <div class="card soft">
+      <h2>Table of Contents</h2>
+
+      <ul class="nav toc">
+         <li><a href="styleguide/#typography">Typography</a></li>
+         <li><a href="styleguide/#color">Color</a></li>
+         <li><a href="styleguide/#grid">Grid</a></li>
+         <li><a href="styleguide/#card">Card</a></li>
+         <li><a href="styleguide/#navigations">Navigations</a></li>
+         <li><a href="styleguide/#tables">Tables</a></li>
+         <li><a href="styleguide/#forms">Forms</a></li>
+      </ul>
+   </div>
+</div>
+
+<div class="container" id="typography">
+   <div class="card soft">
+      <h2>Typography</h2>
+
+      <!-- h$*6{Heading $} -->
+      <div class="display-flex flex-align-center">
+         <div class="flex-none">
+            <code>&lt;h1>&lt;/h1></code>
+         </div>
+         <div class="flex-stretch"><h1>Heading 1</h1></div>
+      </div>
+      <div class="display-flex flex-align-center">
+         <div class="flex-none">
+            <code>&lt;h2>&lt;/h2></code>
+         </div>
+         <div class="flex-stretch"><h2>Heading 2</h2></div>
+      </div>
+      <div class="display-flex flex-align-center">
+         <div class="flex-none">
+            <code>&lt;h3>&lt;/h3></code>
+         </div>
+         <div class="flex-stretch"><h3>Heading 3</h3></div>
+      </div>
+      <div class="display-flex flex-align-center">
+         <div class="flex-none">
+            <code>&lt;h4>&lt;/h4></code>
+         </div>
+         <div class="flex-stretch"><h4>Heading 4</h4></div>
+      </div>
+      <div class="display-flex flex-align-center">
+         <div class="flex-none">
+            <code>&lt;h5>&lt;/h5></code>
+         </div>
+         <div class="flex-stretch"><h5>Heading 5</h5></div>
+      </div>
+      <div class="display-flex flex-align-center">
+         <div class="flex-none">
+            <code>&lt;h6>&lt;/h6></code>
+         </div>
+         <div class="flex-stretch"><h6>Heading 6</h6></div>
+      </div>
+   </div>
+</div>
+
+<div class="container" id="card">
+   <div class="card soft">
+      <h2>Color</h2>
+      <h4>Main colors</h4>
+      <div style="padding: 0.5em; background-color:var(--color-sub-light)">Color Neutral Light</div>
+      <div style="padding: 0.5em; background-color:var(--color-sub-medium)">Color Neutral Medium</div>
+      <div style="padding: 0.5em; background-color:var(--color-sub-dark)">Color Neutral Dark</div>
+
+      <h4>other colors</h4>
+      <div style="padding: 0.5em; background-color:var(--color-main-light)">Color Main Light</div>
+      <div style="padding: 0.5em; background-color:var(--color-main-medium)">Color Main Medium</div>
+      <div style="padding: 0.5em; background-color:var(--color-main-dark)">Color Main Dark</div>
+   
+   </div>
+</div>
+
+<div class="container" id="grid">
+   <div class="card soft">
+      <h2>Grid</h2>
+     
+      <h3>Basic Grid Structure</h2>
+      <h4>Single Column</h4>
+      <div class="grid">
+         <div class="col-xs-12">
+            <div class="well">Column 12</div>
+         </div>
+      </div>
+
+      <h4>3 Column Responsive</h4>
+      <div class="grid">
+         <div class="col-xs-12 col-md-4">
+            <div class="well">col-xs-12 col-md-4</div>
+         </div>
+         <div class="col-xs-12 col-md-4">
+            <div class="well">col-xs-12 col-md-4</div>
+         </div>
+         <div class="col-xs-12 col-md-4">
+            <div class="well">col-xs-12 col-md-4</div>
+         </div>
+      </div>
+
+      <h4>4 Column Responsive</h4>
+      <div class="grid">
+         <div class="col-xs-12 col-md-3">
+            <div class="well">col-xs-12 col-md-3</div>
+         </div>
+         <div class="col-xs-12 col-md-3">
+            <div class="well">col-xs-12 col-md-3</div>
+         </div>
+         <div class="col-xs-12 col-md-3">
+            <div class="well">col-xs-12 col-md-3</div>
+         </div>
+         <div class="col-xs-12 col-md-3">
+            <div class="well">col-xs-12 col-md-3</div>
+         </div>
+      </div>
+
+      <h3>Gap</h3>
+
+      <h4>4 Column Responsive With Gap</h4>
+      <div class="grid gap">
+         <div class="col-xs-12 col-md-3">
+            <div class="well">col-xs-12 col-md-3</div>
+         </div>
+         <div class="col-xs-12 col-md-3">
+            <div class="well">col-xs-12 col-md-3</div>
+         </div>
+         <div class="col-xs-12 col-md-3">
+            <div class="well">col-xs-12 col-md-3</div>
+         </div>
+         <div class="col-xs-12 col-md-3">
+            <div class="well">col-xs-12 col-md-3</div>
+         </div>
+      </div>
+
+      <h3>Other Examples</h3>
+
+      <div class="grid gap">
+         <div class="col-xs-12 col-md-6">
+            <img src="https://via.placeholder.com/600" class="media-image" alt="">
+         </div>
+         <div class="col-xs-12 col-md-6">
+            <div class="grid gap">
+               
+               <div class="col-xs-12 col-sm-6">
+                  <img src="https://via.placeholder.com/600" class="media-image" alt="">
+                  <div>text</div>
+               </div>
+               <div class="col-xs-12 col-sm-6">
+                  <img src="https://via.placeholder.com/600" class="media-image" alt="">
+                  <div>text</div>
+               </div>
+               <div class="col-xs-12 col-sm-6">
+                  <img src="https://via.placeholder.com/600" class="media-image" alt="">
+                  <div>text</div>
+               </div>
+               <div class="col-xs-12 col-sm-6">
+                  <img src="https://via.placeholder.com/600" class="media-image" alt="">
+                  <div>text</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="container" id="card">
+   <div class="card soft">
+      <h2>Card</h2>
+
+      <h3>Standard Card</h3>
+      <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error labore porro. Rem, ipsa fuga soluta nesciunt recusandae iusto minus.</div>
+
+      <h3>Medium Card</h3>
+      <div class="card medium">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error labore porro. Rem, ipsa fuga soluta nesciunt recusandae iusto minus.</div>
+
+      <h3>Dark Card</h3>
+      <div class="card dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error labore porro. Rem, ipsa fuga soluta nesciunt recusandae iusto minus.</div>
+
+      <h3>Soft Standard Card</h3>
+      <div class="card soft">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error labore porro. Rem, ipsa fuga soluta nesciunt recusandae iusto minus.</div>
+
+      <h3>Soft Medium Card</h3>
+      <div class="card medium soft">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error labore porro. Rem, ipsa fuga soluta nesciunt recusandae iusto minus.</div>
+
+      <h3>Soft Dark Card</h3>
+      <div class="card dark soft">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error labore porro. Rem, ipsa fuga soluta nesciunt recusandae iusto minus.</div>
+
+      <h3>Soft Rainbow Card</h3>
+      <div class="card rainbow soft">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error labore porro. Rem, ipsa fuga soluta nesciunt recusandae iusto minus.</div>
+
+      <h3>Soft flat Card</h3>
+      <div class="card flat soft">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error labore porro. Rem, ipsa fuga soluta nesciunt recusandae iusto minus.</div>
+   </div>
+</div>
+
+
+<script>
+const makeNav = (classes='') => {
+const links = ['home','store','about','cart'];
+document.write(`
+<div>
+<nav class="${classes}">
+   <ul>
+      ${links.reduce((r,o,i,a)=>r+`<li><a href="#">${o}</a></li>`,'')}
+   </ul>
+</nav>
+</div>
+`);
+}
+</script>
+
+
+<div class="container" id="navigations">
+   <div class="card soft">
+      <h2>Navigations</h2>
+      <h3>Basic Nav</h3>
+      <div class="grid">
+         <div class="col-2">
+            <script>makeNav("nav")</script>
+         </div>
+         <div class="col-8">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptas, saepe accusamus beatae fugiat assumenda excepturi adipisci, nemo odio doloribus nobis iure architecto earum non aspernatur possimus dolores reprehenderit rerum perspiciatis animi eveniet ea eius omnis. Ratione, omnis, nihil corporis deserunt, deleniti laborum ad vel totam, quisquam quod esse animi.</p>
+            <p>Eos nemo, reprehenderit reiciendis totam itaque ut officia saepe necessitatibus tempora doloribus nesciunt sequi quos a. Laborum voluptate ducimus labore, unde perspiciatis enim quia animi commodi veritatis praesentium illum, corporis. Id, soluta. Repellendus tenetur, ipsam impedit nihil, quod accusantium. Repellat accusantium dolorum amet itaque quis aut voluptas delectus doloremque pariatur.</p>
+         </div>
+      </div>
+
+
+
+
+      <h3>Flex Nav</h3>
+      <script>makeNav("nav flex")</script>
+
+      <h3>Stretch Nav</h3>
+      <script>makeNav("nav stretch")</script>
+
+
+
+      <h3>Navbar</h3>
+   </div>
+</div>
+
+<header class="navbar">
+   <div class="container display-flex flex-align-center">
+      <div class="flex-none">
+         <h1>logo</h1>
+      </div>
+      <div class="flex-stretch"></div>
+      <div class="flex-none">
+      <script>makeNav("nav flex")</script>
+         
+      </div>
+   </div>
+</header>
+
+<div class="container">
+   <div class="card soft">
+      <h3>Breadcrumb Nav</h3>
+      <script>makeNav(" crumbs")</script>
+   </div>
+</div>
+
+
+<script>
+const makeTable = (classes='') => {
+const head = ['ID','Office','Name','Email','Phone'];
+const body = [
+   ['522',"Hamilton Cline",'hcline@academyart.edu','555-2424'],
+   ['512',"Fred McHale",'fmchale@academyart.edu','555-2424'],
+   ['522',"Michael Catanzaro",'mcatanzaro@academyart.edu','555-2424'],
+   ['514',"Andrea Pimentel",'apimentel@academyart.edu','555-2424'],
+   ['516',"DC Scarpelli",'dscarpelli@academyart.edu','555-2424'],
+];
+document.write(`
+<table class="${classes}">
+   <thead><tr>${head.reduce((r,o,i,a)=>r+`<th>${o}</th>`,'')}</tr></thead>
+   <tbody>
+      ${body.reduce((r,o,i,a)=>r+
+         `<tr>${[i+1,...o].reduce((r,o,i,a)=>r+`<td>${o}</td>`,'')}</tr>`
+      ,'')}
+   </tbody>
+</table>
+`)
+}
+</script>
+
+
+<div class="container" id="tables">
+   <div class="card soft">
+      <h2>Tables</h2>
+
+      <h3>Standard Table</h3>
+      <script>makeTable("table")</script>
+
+      <h3>Striped Table</h3>
+      <script>makeTable("table striped")</script>
+
+      <h3>Lined Hoizontal Table</h3>
+      <script>makeTable("table lined horizontal")</script>
+
+      <h3>Lined Vertical Table</h3>
+      <script>makeTable("table lined vertical")</script>
+
+      <h3>Lined both Table</h3>
+      <script>makeTable("table lined horizontal vertical")</script>
+
+      <h3>Lined outline Table</h3>
+      <script>makeTable("table lined outline")</script>
+
+      <h3>Lined outline striped Table</h3>
+      <script>makeTable("table lined outline striped")</script>
+
+      <h3>Lined all Table</h3>
+      <div class="overscroll-x">
+         <script>makeTable("table lined all")</script>
+      </div>
+   </div>
+</div>
+
+
+<div class="container" id="forms">
+   <div class="card soft">
+      <h2>Forms</h2>
+
+      <form action="" method=""></form>
+
+      <h3>Basic Input</h3>
+      <form>
+         <input type="text" placeholder="Text" class="form-input">
+         <input type="number" placeholder="Number" class="form-input">
+         <input type="search" placeholder="Search" class="form-input">
+         <input type="password" placeholder="Password" class="form-input">
+      </form>
+
+      <hr>
+
+      <h3>Form Label &amp; Control</h3>
+      <div class="form-control">
+         <label for="example1" class="form-label">Name</label>
+         <input id="example1" type="text" placeholder="Name" class="form-input">
+      </div>
+      <div class="form-control">
+         <label for="example2" class="form-label">Name</label>
+         <input id="example2" type="text" placeholder="Name" class="form-input">
+      </div>
+      <div class="form-control">
+         <label for="example3" class="form-label">Name</label>
+         <input id="example3" type="text" placeholder="Name" class="form-input">
+      </div>
+
+      <div class="form-control display-flex flex-align-center">
+         <div class="flex-none"><label for="example4" class="form-label">Name</label></div>
+         <div class="flex-stretch"></div>
+         <div class="flex-none"><input id="example4" type="text" placeholder="Name" class="form-input"></div>
+      </div>
+
+      <h3>Lined Input</h3>
+      <div class="form-control">
+         <label for="example5" class="form-label">Name</label>
+         <input id="example5" type="text" placeholder="Name" class="form-input-lined">
+      </div>
+      <div class="form-control">
+         <label for="example6" class="form-label">Name</label>
+         <input id="example6" type="text" placeholder="Name" class="form-input-lined">
+      </div>
+
+      <hr>
+
+      <h3>Buttons</h3>
+      <input type="button" class="form-button" value="Add to Cart">
+      <input type="submit" class="form-button" value="Confirm">
+
+
+      <h3>Other Buttons</h3>
+      <button type="button" class="form-button sell">Add to Cart</button>
+
+      <h3>Other Layouts</h3>
+
+      <div class="display-flex">
+         <div class="flex-stretch"></div>
+         <div class="flex-none">
+            <button type="button" class="form-button sell">Confirm</button>
+         </div>
+         <div class="flex-none" style="margin-left:0.2em">
+            <button type="button" class="form-button sell">Cancel</button>
+         </div>
+      </div>
+
+      <hr>
+
+      <h3>Hotdog Input</h3>
+
+      <form>
+         <input type="search" class="hotdog" placeholder="Search">
+      </form>
+
+      <h3>Hotdog Form</h3>
+
+      <form class="hotdog">
+         <div class="flex-stretch">
+            <input type="search" placeholder="Search">
+         </div>
+         <div class="flex-none">
+            <img src="img/icon/search.svg" alt="" class="icon">
+         </div>
+      </form>
+
+      <hr>
+
+      <h3>Form Select</h3>
+
+      <div class="form-select">
+         <select>
+            <option value="bird">bird</option>
+            <option value="dog">dog</option>
+            <option value="cat">cat</option>
+            <option value="horse">horse</option>
+         </select>
+      </div>
+
+   </div>
+</div>
+
+<div class="container">
+   <div class="card soft">
+   <h3>Product Figures</h3>
+      <figure class="product">
+         <div class="product-image">
+         
+            <img src="https://via.placeholder.com/600?text=Themephoto" alt="">
+         </div>
+         <figcaption class="product-caption">
+            
+            <div class="product-title">Description</div>
+         </figcaption>
+      </figure>   
+
+      <div class="grid gap product-list">
+         <div class="col-xs-12 col-md-4">
+      
+            <a href="#" class="product">
+               <div class="product-image">
+                  <img src="https://via.placeholder.com/600?text=Banana" alt="">
+               </div>
+               <figcaption class="product-caption">
+                  
+                  <div class="product-title">Banana</div>
+                  <div class="product-price">&dollar;15</div>
+               </figcaption>
+            </a>
+         </div>
+         <div class="col-xs-12 col-md-4">
+            <figure class="product">
+               <div class="product-image">
+                  <img src="https://via.placeholder.com/600?text=Banana" alt="">
+               </div>
+               <figcaption class="product-caption">
+                  
+                  <div class="product-title">Banana</div>
+                  <div class="product-price">&dollar;15</div>
+               </figcaption>
+            </figure>
+         </div>
+         <div class="col-xs-12 col-md-4">
+            <figure class="product">
+               <div class="product-image">
+                  <img src="https://via.placeholder.com/600?text=Banana" alt="">
+               </div>
+               <figcaption class="product-caption">
+              
+                  <div class="product-title">Banana</div>
+                  <div class="product-price">&dollar;15</div>
+               </figcaption>
+            </figure>
+         </div>
+      </div>
+   </div>
+</div>
+
+</html>
