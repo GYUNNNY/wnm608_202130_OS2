@@ -1,8 +1,15 @@
 # Yun Yao
 
 ## Store Website
+ 
+ - http://yunyao31.com/aau/wnm608/yao.yun/product_page/
+
 
 ### Important Links
+- http://www.yunyao31.com/aau/wnm608/yao.yun/product_page/styleguide
+- http://yunyao31.com/aau/wnm608/yao.yun/recipes/
 
-- http://yunyao31.com/aau/wnm608/yao.yun/pduct_page/index.html
-- http://yunyao31.com/aau/wnm608/yao.yun/recipes/index.html
+### Git commands
+git add .
+git commit -m "[massage]"
+git push origin main
