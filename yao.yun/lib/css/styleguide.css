@@ -4,12 +4,12 @@
  }
  
  :root {
-    --color-neutral-lighter:#efecdf;
+    --color-neutral-lighter:#f4f2e9;
     --color-neutral-light:#efecdf;
     --color-neutral-medium:#dbd7c3;
     --color-neutral-dark:#bab399;
  
-    --color-main-light: #d3e4ea;
+    --color-main-light: #8ba8b2;
     --color-main-medium: #567f91;
     --color-main-dark: #3b5e72;
  
@@ -22,7 +22,7 @@
  
  
     --color-white:#fff;
-    --color-black:#111;
+    --color-black:#161622;
  
  
     --header-height:4rem;
