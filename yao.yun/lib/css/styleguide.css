@@ -51,23 +51,24 @@
  h1 {
     text-align: center;
     font-size:2.5em;
-    font-family: source sans pro;
+    font-family: playfair display;
     color: var(--color-main-dark);
  }
  h2 {
     text-align: center;
     font-size:2.3em;
-    font-family: source sans pro;
+    font-family: playfair display;
     color: var(--color-main-dark);
  }
  h3{
     
     font-size:2em;
+    text-align: center;
     font-family: source sans pro;
     color: var(--color-main-dark);
  }
  h4 {
-    text-align: left;
+    text-align: center;
     font-size:1.5em;
     font-family: source sans pro;
     color: var(--color-main-dark);
@@ -89,12 +90,13 @@
  }
  
  a {
-    color:inherit;
+    color:var(--color-main-dark);
     font-weight:normal;
     text-decoration:none;
  }
  a:hover {
     text-decoration:none;
+   
     color: var(--color-main-dark);
  }
  
@@ -103,11 +105,12 @@
  
  /* LAYOUT CLASSES */
  .container {
-    max-width:1200px;
-    margin: auto;
-    margin-top:em;
+    max-width:1000px;
+    margin-left: 1em;
+    margin-right: auto;
+    padding-top: 0.5em;
  }
- 
+
  
  .hidden { display:none; }
  
@@ -193,11 +196,12 @@
     background-color:var(--color-sub-medium);
     color:var(--color-white);
     line-height:var(--header-height);
-    margin-top: 2em;
  }
+
  .navbar h1 {
     font-family:var(--font-sans);
     font-size:1em;
+    padding-top: 0 0.5em;
     margin:0;
  }
  
@@ -329,7 +333,7 @@
  hr {
     border-width:0;
     margin:1em 0;
-    border-bottom:1px dashed var(--color-neutral-medium);
+    border-bottom:1px solid var(--color-neutral-medium);
  }
  
  
