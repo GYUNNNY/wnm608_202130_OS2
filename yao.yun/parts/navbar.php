@@ -1,4 +1,4 @@
-<header class="navbar">
+   <header class="navbar">
         <div class="container display-flex flex-aligh-center">
            <div class="logo">
               <a href="">
@@ -8,10 +8,11 @@
 
            <nav class="nav flex-none">
               <ul class="display-flex">
-                 <li><a href="coffeelist.php">COFFEE</a></li>
-                 <li><a href="#giftslist.php">GIFTS</a></li>
-                 <li><a href="#ourstory.php">OUR STORY</a></li>
-                 <li><a href="#cafes.php">CAFÉS</a></li>
+                 <li><a href="#article1">COFFEE</a></li>
+                 <li><a href="#article2">GIFTS</a></li>
+                 <li><a href="#article3">OUR STORY</a></li>
+                 <li><a href="#article4">CAFÉS</a></li>
+                 <li><a href="#article4">CART</a></li>
               </ul>
            </nav>
         </div>

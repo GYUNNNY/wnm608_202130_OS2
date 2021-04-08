@@ -1,34 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>landing page</title>
-   <link rel="stylesheet" href="lib/css/styleguide.css">
-   <link rel="stylesheet" type="text/css" href="lib/css/gridsystem.css">
-   <link rel="stylesheet" href="css/storetheme.css">
+<?php include "head.php" ?>
 </head>
 <body>
-   <header class="navbar">
-        <div class="container display-flex flex-aligh-center">
-           <div class="logo">
-              <a href="">
-                 <img src="images/logo1.png" width="100px">
-               </a>
-           </div>
-
-           <nav class="nav flex-none">
-              <ul class="display-flex">
-                 <li><a href="#article1">COFFEE</a></li>
-                 <li><a href="#article2">GIFTS</a></li>
-                 <li><a href="#article3">OUR STORY</a></li>
-                 <li><a href="#article4">CAFÉS</a></li>
-                 <li><a href="#article4">CART</a></li>
-              </ul>
-           </nav>
-        </div>
-   </header>
-
+   <?php include "parts/navbar.php"
+?>
    <div class="view-window" >
       <img src="images/c4.jpg" width="100%">
       <h2>PRODUCT</h2>
@@ -36,7 +13,7 @@
 
    <div class="container">
       <article id="article1" class="article card soft">
-         <h2>Article 1</h2>
+         <h2>Article 0</h2>
          <div class="article-body">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At rem mollitia cupiditate consectetur dolorem, quaerat. Nihil sunt ullam harum ex id quam ipsum, amet molestiae. Molestias porro, cupiditate, nostrum, a aliquid, expedita alias hic voluptatem similique nihil sunt voluptatum magni!</p>
             <p>Soluta, nisi ipsam quas accusantium ducimus! Excepturi reprehenderit nulla, similique eligendi consequuntur beatae iste sint cumque corrupti explicabo sequi recusandae quae possimus quaerat, neque ut accusamus dolorem optio cum ullam! Facilis quaerat veritatis laborum, voluptatum a pariatur explicabo ea esse?</p>
