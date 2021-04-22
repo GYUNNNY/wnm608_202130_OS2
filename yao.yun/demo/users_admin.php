@@ -5,11 +5,13 @@ include "../lib/php/functions.php";
 $users = file_get_json("users.json");
 
 // pretty_dump($_SERVER);
-// pretty_dump($_GET);
+pretty_dump([$_GET,$_post]);
 
 
 
+$empty_object = (object) [
 
+];
 
 
 
@@ -24,23 +26,41 @@ echo <<<HTML
       <li><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
    </ul>
 </nav>
+
 <div>
-   	<h2>$user->name</h2>
+   <h2>$user->name</h2>
+   <div>
+      <strong>Type</strong>
+      <span>$user->type</span>
+   </div>
+   <div>
+      <strong>Email</strong>
+      <span>$user->email</span>
+   </div>
+   <div>
+      <strong>Classes</strong>
+      <span>$classes</span>
+   </div>
+</div>
+
+<div>
+   	
 	   	<div class="form-control">
-	   		<label for="example1" class="form-label">Type</label>
-			<input id="example1" type="text" class="form-input" value="$user->type">	   		
-	  	</div>
+	   		<label for="example1" class="form-label">Name</label>
+         <input id="example1" type="text" placeholder="Enter your name"
+         class="form-input" value="$user->type">	   		
+	  	   </div>
 	   	<div class="form-control">
 	    	<label for="example1" class="form-label">Email</label>
-			<input id="example1" type="text" class="form-input" value="$user->email">	   		
+			<input id="example1" type="text" placeholder="Enter your email" class="form-input" value="$user->email">	   		
 	   	</div>
 	   	<div class="form-control">
 	    	<label for="example1" class="form-label">Classes</label>
-			<input id="example1" type="text" class="form-input" value="$classes">	   		
+			<input id="example1" type="text" placeholder="Enter your class" class="form-input" value="$classes">	   		
 	   	</div>
 	   	<div class="display-flex">
-	   		<input type="button" class="form-button-white" value="Remove">
-	   		<input type="button" class="form-button-black" value="Submit">
+	   		
+	   		<input type="button" class="form-button" value="Submit">
 	   	</div>
 </div>
 HTML;
@@ -78,6 +98,7 @@ HTML;
 
          <?php
          if(isset($_GET['id'])) {
+            //ternary conditional 
             showUserPage($users[$_GET['id']]);
          } else {
          ?>
