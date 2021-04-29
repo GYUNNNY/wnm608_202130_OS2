@@ -91,6 +91,9 @@ body {
         box-shadow:0 0 15px rgba(0,0,0,0.3);
      }
      .product-image img {
+        position: absolute;
+        object-fit: cover;
+
         max-width:100%;
         vertical-align:middle;
      }
@@ -103,12 +106,29 @@ body {
      .product-title {
         font-size:0.9em;
      }
-     
-     
-     
-     [class *='col-']>.card {
-         height:100%;
+     .image-main img {
+        position: relative;
+        width: 100%;
+        height: 100%;
      }
+     
+     .image-thumbs img {
+        width: 8em;
+        height: 6em;
+        object-fit: cover;
+     }
+     
+     
+     .product-display .product-title {
+        font-size:2.1em;
+        font-weight:300;
+     }
+     
+     
+     .product-list [class*='col-']>.card {
+        height:100%;
+     }
+     
      
      @media (max-width:500px) {
         :root {
