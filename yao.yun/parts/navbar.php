@@ -13,8 +13,11 @@
                  <li><a href="product_list.php">SHOP</a></li> 
                  <li><a href="ourstory.php">OUR STORY</a></li>
                  <li><a href="cafe.php">CAFÉ</a></li>
-                 <li><a href="product_cart.php">CART</a></li>
+                 <li><a href="product_cart.php">
+                    <span>CART</span>
                  <span class="badge"><?= makeCartBadge() ?></span>
+                 </a></li>
+                 
               </ul>
               
            </nav>

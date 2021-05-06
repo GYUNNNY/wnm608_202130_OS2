@@ -67,7 +67,7 @@ body {
      
      body {
         background-color:#f8f8fa;
-        padding-bottom:10em;
+        padding-bottom:0em;
      }
      
      
@@ -143,20 +143,20 @@ body {
         height:100%;
      }
 
-     /* .card-section {
+      .card-section {
       margin-top: 1em;
       padding-top: 1em;
    
-   } */
+   } 
 
    
 
    .navbar .badge {
-      position: absolute;
-      top: 0;
+      position: relative;
+      top: 0.5em;
       right: -0.5em;
-      font-size: 0.5em;
-      padding: 0.4em;
+      font-size: 0.7em;
+      padding: 0.2em;
       border-radius: 1em;
       background-color: black;
       color: white;

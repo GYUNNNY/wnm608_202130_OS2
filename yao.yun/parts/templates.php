@@ -20,7 +20,7 @@ HTML;
 function selectAmount($amount=1,$total=10) {
 	$output = "<select name= 'amount'>";
 	for($i=1;$i<$total;$i++){
-		$output .= "<option".($i==$amount?'selected':'').">$i</option>";
+		$output .= "<option ".($i==$amount?'selected':'').">$i</option>";
 	}
 	$output .= "</select>";
 	return $output;
@@ -31,22 +31,22 @@ function makeCartList($r,$o) {
    $amountselect = selectAmount($o->amount,10);
    
       return $r.<<<HTML
-      <div class="display-flex cart-section">
+      <div class="display-flex cart-product">
          <div class="flex-none image-thumbs">
-            <img src="$o->image_main">
+            <img src="$o->image_thumb">
          </div>
          <div class="flex-stretch">
             <p>$o->name</p>
-            <form action="product_actions.php?crud=delete-cart-item" method="post" style="font-size:0.8em">
+            <form action="product_actions.php?crud=delete-cart-item" method="post">
                <input type="hidden" name="id" value="$o->id">
-               <input class="form-button inline" type="submit" value="delete">
+               <input class="form-button-white" type="submit" value="delete">
             </form>
          </div>
          <div class="flex-none">
             <p>&dollar;$totalfixed</p>
-            <form action="product_actions.php?crud=update-cart-item" method="post" onchange="this.submit()" style="font-size:0.8em">
+            <form action="product_actions.php?crud=update-cart-item" method="post" onchange="this.submit()">
                <input type="hidden" name="id" value="$o->id">
-               <div class="form-select">
+               <div class="form-select-product-cart">
                   $amountselect
                </div>
             </form>

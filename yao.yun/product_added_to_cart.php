@@ -1,7 +1,9 @@
 <?php
 
 include "lib/php/functions.php";
-include "parts/templates.php";
+
+
+
 $product = MYSQLIQuery("
 	SELECT *
 	FROM `products`
@@ -29,7 +31,7 @@ $product = MYSQLIQuery("
     <div class="card soft">
                <?php
 				if(!isset($_GET['id'])) {
-					echo "go back";
+					echo "You dun goofed";
 					} else {
 				?>
         <h3> You have added <?= $product->name ?> to your cart</h3>

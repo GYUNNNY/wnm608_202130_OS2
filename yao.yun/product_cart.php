@@ -27,41 +27,18 @@ $cart = getCartItems();
 
 				<?php
 
-                if(!count($cart)){
-	            echo "<h6>No Items in Your Cart</h6>";
-                 }
-                 else {
-                  echo array_reduce($cart,'makeCartList');
-                 }
+		        if(!count($cart)) {
+		        	echo "<h5>No Items In Your Cart Yet</h5>";
+		        }
+		        else {
+		        	echo array_reduce($cart,'makeCartList');
+		        }
 
-                 ?>
+		         ?>
 
 				</div>
 			</div>
-			<!-- <div class="col-xs-12 col-md-5">
-				<div class="card soft flat">
-					<div class="card-section display-flex">
-						<div class="flex-stretch"><strong>Sub Total</strong></div>
-						<div class="flex-none">&dollar;####</div>
-					</div>
-					<div class="card-section display-flex">
-						<div class="flex-stretch"><strong>Taxes</strong></div>
-						<div class="flex-none">&dollar;####</div>
-					</div>
-					<div class="card-section display-flex">
-						<div class="flex-stretch"><strong>Total</strong></div>
-						<div class="flex-none">&dollar;####</div>
-					</div>
-					<div class="card section display-flex">
-						<a href="product_checkout.php" class="form-button">Checkout</a>    
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</body>
-</html> -->
+			
 <div class="col-xs-12 col-md-4">
             <div class="card soft flat">
                <div class="card-section display-flex">
@@ -69,7 +46,7 @@ $cart = getCartItems();
                </div>
                <?= cartTotals() ?>
                <div class="card-section display-flex">
-                  <a class="form-button" href="checkout.php">Checkout</a>
+                  <a class="form-button" href="product_checkout.php">Checkout</a>
                </div>
             </div>
          </div>

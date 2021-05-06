@@ -105,7 +105,7 @@
  
  /* LAYOUT CLASSES */
  .container {
-    max-width:1500px;
+    max-width:1000px;
     margin-left: auto;
     margin-right: auto;
    
@@ -206,7 +206,7 @@
       line-height:var(--header-height);
    }
    .navbar a {
-      display: block;
+      position: relative;
    }
 
  .navbar h1 {
@@ -423,6 +423,9 @@
  }
  
  
+
+ 
+ 
  .hotdog {
     display:inline-flex;
     width:100%;
@@ -446,7 +449,7 @@
  
  
  
- /*
+ /
  .form-select {
     position: relative;
  }
@@ -476,7 +479,6 @@
  }
  
  
- */
  
  
  
@@ -491,9 +493,10 @@
 
  /* Button */
  .form-button {
-    width: 400px;
+    width: 300px;
     height: 60px;
     background-color: var(--color-sub-dark);
+    border-radius:0.3em;
     font-family: playfair display;
     color: white;
     margin-bottom: 25px;
@@ -511,12 +514,29 @@
 
  }
 
+ .form-button-white{
+   display:inline-block;
+   width:initial;
+   border-width:0;
+   background-color:var(--color-sub-dark);
+   padding:auto;
+   border-radius:0.3em;
+   font:inherit;
+   margin-left: 4px;
+   text-align: center;
+   text-decoration:none;
+   cursor:pointer;
+   transition:all 0.3s;
+   font-family:var(--font-sans);
+   color:var(--color-black);
+}
+
  .footer-inner {
    
    background-color: #362509;
    width: 100%;
    margin-top: 8em;
-   margin-bottom: 8em;
+   margin-bottom: 2em;
    overflow: hidden;
 
 

@@ -2,7 +2,6 @@
 
 session_start();
 
-
 function pretty_dump($data) {
    echo "<pre>",var_dump($data),"</pre>";
 }
@@ -31,18 +30,20 @@ function MYSQLIConn(){
 
 function MYSQLIQuery($sql) {
 	$conn = MYSQLIConn();
-
+ 
 	$a =[];
-
-	$result = $conn ->query($sql);
-
+ 
+	$result = $conn->query($sql);
+ 
+	if($conn->errno)
+	   die($conn->error);
+ 
 	while($row = $result->fetch_object()) {
-			$a[] = $row;
+	   $a[] = $row;
 	}
-	
+ 
 	return $a;
-}
-
+ }
 
 
 // CART FUNCTIONS
