@@ -1,0 +1,882 @@
+diff --git a/yao.yun/css/storetheme.css b/yao.yun/css/storetheme.css
+index dd91d81..ede76dc 100644
+--- a/yao.yun/css/storetheme.css
++++ b/yao.yun/css/storetheme.css
+@@ -76,26 +76,23 @@ body {
+      /* PRODUCT IN LIST */
+      .product {
+         margin:0;
+-        /*padding:1em;*/
+-        box-shadow:0 0 10px rgba(0,0,0,0.1);
+-        border-radius:1em;
++        border-radius:0.5em;
+         position:relative;
+         overflow:hidden;
+         background-color:var(--color-neutral-lighter);
+         display:inline-block;
+         transition:all 0.3s;
+-        font-weight:normal;
++       
+      }
+      .product:hover {
+         text-decoration:none;
+         box-shadow:0 0 15px rgba(0,0,0,0.3);
+      }
+      .product-image img {
+-        position: absolute;
+-        object-fit: cover;
+-
+-        max-width:100%;
+-        vertical-align:middle;
++      position: absolute;
++      object-fit: cover;
++         max-width:100%;
++         vertical-align:middle;
+      }
+      .product-caption {
+         padding:1em;
+@@ -105,11 +102,28 @@ body {
+      }
+      .product-title {
+         font-size:0.9em;
++        font-weight: 500;
+      }
++
++     .product-list .product {
++      height:100%;
++      width: 100%;
++   }
++
++     .image-main {
++        width:100%;
++        height:0;
++        position:relative;
++        padding-bottom:70%;
++     }
++
+      .image-main img {
+         position: relative;
++        top: 0;
++        left: 0;
+         width: 100%;
+         height: 100%;
++        object-fit: cover;
+      }
+      
+      .image-thumbs img {
+@@ -128,10 +142,41 @@ body {
+      .product-list [class*='col-']>.card {
+         height:100%;
+      }
+-     
+-     
+-     @media (max-width:500px) {
+-        :root {
+-           --header-height:2rem;
+-        }
+-     }
+\ No newline at end of file
++
++     /* .card-section {
++      margin-top: 1em;
++      padding-top: 1em;
++   
++   } */
++
++   
++
++   .navbar .badge {
++      position: absolute;
++      top: 0;
++      right: -0.5em;
++      font-size: 0.5em;
++      padding: 0.4em;
++      border-radius: 1em;
++      background-color: black;
++      color: white;
++      line-height: 1;
++      pointer-events: none;
++   }
++   
++   .navbar .badge:empty {
++      display:none;
++   }
++  
++   @media (max-width:1000px) {
++      .container {
++         padding-left: 10px;
++         padding-right: 10px;
++      }
++   }
++   
++   @media (max-width:500px) {
++      :root {
++         --header-height:2rem;
++      }
++   }
+\ No newline at end of file
+diff --git a/yao.yun/images/product10_t.jpg b/yao.yun/images/product10_t.jpg
+new file mode 100644
+index 0000000..b173744
+Binary files /dev/null and b/yao.yun/images/product10_t.jpg differ
+diff --git a/yao.yun/images/product11_t.jpg b/yao.yun/images/product11_t.jpg
+new file mode 100644
+index 0000000..4a237f5
+Binary files /dev/null and b/yao.yun/images/product11_t.jpg differ
+diff --git a/yao.yun/images/product12_t.jpg b/yao.yun/images/product12_t.jpg
+new file mode 100644
+index 0000000..e040eac
+Binary files /dev/null and b/yao.yun/images/product12_t.jpg differ
+diff --git a/yao.yun/images/product13_t.jpg b/yao.yun/images/product13_t.jpg
+new file mode 100644
+index 0000000..e09928c
+Binary files /dev/null and b/yao.yun/images/product13_t.jpg differ
+diff --git a/yao.yun/images/product2_t.jpg b/yao.yun/images/product2_t.jpg
+new file mode 100644
+index 0000000..fdfda68
+Binary files /dev/null and b/yao.yun/images/product2_t.jpg differ
+diff --git a/yao.yun/images/product3_t.jpg b/yao.yun/images/product3_t.jpg
+new file mode 100644
+index 0000000..675afea
+Binary files /dev/null and b/yao.yun/images/product3_t.jpg differ
+diff --git a/yao.yun/images/product4_t.jpg b/yao.yun/images/product4_t.jpg
+new file mode 100644
+index 0000000..8417b06
+Binary files /dev/null and b/yao.yun/images/product4_t.jpg differ
+diff --git a/yao.yun/images/product5_t.jpg b/yao.yun/images/product5_t.jpg
+new file mode 100644
+index 0000000..6d0ba77
+Binary files /dev/null and b/yao.yun/images/product5_t.jpg differ
+diff --git a/yao.yun/images/product6 _t.jpg b/yao.yun/images/product6 _t.jpg
+new file mode 100644
+index 0000000..ef0a9aa
+Binary files /dev/null and b/yao.yun/images/product6 _t.jpg differ
+diff --git a/yao.yun/images/product7_t.jpg b/yao.yun/images/product7_t.jpg
+new file mode 100644
+index 0000000..c0e3d8e
+Binary files /dev/null and b/yao.yun/images/product7_t.jpg differ
+diff --git a/yao.yun/images/product8 _t.jpg b/yao.yun/images/product8 _t.jpg
+new file mode 100644
+index 0000000..08a7fea
+Binary files /dev/null and b/yao.yun/images/product8 _t.jpg differ
+diff --git a/yao.yun/images/product9_t.jpg b/yao.yun/images/product9_t.jpg
+new file mode 100644
+index 0000000..97f1f4d
+Binary files /dev/null and b/yao.yun/images/product9_t.jpg differ
+diff --git a/yao.yun/images/staricon.png b/yao.yun/images/staricon.png
+new file mode 100644
+index 0000000..fbef290
+Binary files /dev/null and b/yao.yun/images/staricon.png differ
+diff --git a/yao.yun/index.php b/yao.yun/index.php
+index 6dbd5f3..60dd6c5 100644
+--- a/yao.yun/index.php
++++ b/yao.yun/index.php
+@@ -61,6 +61,8 @@
+    <link rel="stylesheet" href="lib/css/styleguide.css">
+    <link rel="stylesheet" href="lib/css/gridsystem.css">
+    <link rel="stylesheet" href="css/storetheme.css">
++   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
++
+    <?php include "parts/meta.php" ?>
+    
+ </head>
+diff --git a/yao.yun/lib/css/gridsystem.css b/yao.yun/lib/css/gridsystem.css
+index eb84c08..5ad6def 100644
+--- a/yao.yun/lib/css/gridsystem.css
++++ b/yao.yun/lib/css/gridsystem.css
+@@ -17,7 +17,7 @@
+     gap:var(--grid-gap);
+  }
+     .gap.small { --grid-gap:0.5em; }
+-    .gap.large { --grid-gap:2em; }
++    .gap.large { --grid-gap:5em; }
+  
+  
+ 
+diff --git a/yao.yun/lib/css/styleguide.css b/yao.yun/lib/css/styleguide.css
+index f791370..6a9c813 100644
+--- a/yao.yun/lib/css/styleguide.css
++++ b/yao.yun/lib/css/styleguide.css
+@@ -1,4 +1,4 @@
+-
++/*CSS RESETS*/
+ *, *::before, *::after {
+     box-sizing:border-box;
+  }
+@@ -25,7 +25,7 @@
+     --color-black:#161622;
+  
+  
+-    --header-height:4rem;
++    --header-height:3rem;
+  
+  
+     --font-sans: Helvetica, Source sans pro, sans-serif;
+@@ -49,13 +49,13 @@
+     font-family:var(--font-serif);
+  }
+  h1 {
+-    text-align: center;
++    text-align: left;
+     font-size:2.5em;
+     font-family: playfair display;
+     color: var(--color-main-dark);
+  }
+  h2 {
+-    text-align: center;
++    text-align: left;
+     font-size:2.3em;
+     font-family: playfair display;
+     color: var(--color-main-dark);
+@@ -63,26 +63,26 @@
+  h3{
+     
+     font-size:2em;
+-    text-align: center;
++    text-align: left;
+     font-family: source sans pro;
+     color: var(--color-main-dark);
+  }
+  h4 {
+-    text-align: center;
++    text-align: left;
+     font-size:1.5em;
+     font-family: source sans pro;
+     color: var(--color-main-dark);
+     margin:1em 0;
+  }
+  h5 {
+-    text-align: center;
++    text-align: left;
+     font-size:1.3em;
+     font-family: source sans pro;
+     color: var(--color-main-dark);
+     margin:1em 0;
+  }
+  h6 {
+-    text-align: center;
++    text-align: left;
+     font-size:1em;
+     font-family: source sans pro;
+     color: var(--color-main-dark);
+@@ -90,7 +90,7 @@
+  }
+  
+  a {
+-    color:var(--color-main-dark);
++    color: inherit;
+     font-weight:normal;
+     text-decoration:none;
+  }
+@@ -105,13 +105,20 @@
+  
+  /* LAYOUT CLASSES */
+  .container {
+-    max-width:1000px;
++    max-width:1500px;
+     margin-left: auto;
+     margin-right: auto;
+-    padding-top: 0.5em;
+-    padding-left: 1em;
++   
+  }
+ 
++ /* .quote {
++	margin-left: auto;
++	margin-right: auto;
++	padding: 6em 0 3em 0;
++
++} */
++
++
+  
+  .hidden { display:none; }
+  
+@@ -193,11 +200,14 @@
+  
+  
+  /* Navbar */
+- .navbar {
+-    background-color:var(--color-sub-medium);
+-    color:var(--color-white);
+-    line-height:var(--header-height);
+- }
++.navbar {
++      background-color:var(--color-sub-medium);
++      color:var(--color-white);
++      line-height:var(--header-height);
++   }
++   .navbar a {
++      display: block;
++   }
+ 
+  .navbar h1 {
+     font-family:var(--font-sans);
+@@ -206,10 +216,6 @@
+     margin:0;
+  }
+  
+- .navbar a {
+-    display:block;
+-    padding:0 0.5em;
+- }
+  
+  
+  
+@@ -244,11 +250,9 @@
+  
+  .card {
+     background-color:var(--color-white);
+-    padding:2em;
+- 
++    padding:2em; 
+     margin-bottom:1em;
+     margin-top:1em;
+- 
+     position:relative;
+     overflow:hidden;
+  }
+diff --git a/yao.yun/lib/php/functions.php b/yao.yun/lib/php/functions.php
+index 7bcd749..e996c4c 100644
+--- a/yao.yun/lib/php/functions.php
++++ b/yao.yun/lib/php/functions.php
+@@ -1,5 +1,8 @@
+ <?php
+ 
++session_start();
++
++
+ function pretty_dump($data) {
+    echo "<pre>",var_dump($data),"</pre>";
+ }
+@@ -38,4 +41,75 @@ function MYSQLIQuery($sql) {
+ 	}
+ 	
+ 	return $a;
+-}
+\ No newline at end of file
++}
++
++
++
++// CART FUNCTIONS
++
++function array_find($array,$fn) {
++	foreach($array as $o) if($fn($o)) return $o;
++	return false;
++ }
++ 
++ function getCart() {
++	return isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
++ }
++ 
++ function setCart($a) {
++	$_SESSION['cart'] = $a;
++ }
++ 
++ function resetCart() { setCart([]); }
++ 
++ function cartItemById($id) {
++	return array_find(getCart(),function($o)use($id){ return $o->id==$id; });
++ }
++ 
++ function addToCart($id,$amount) {
++	$cart = getCart();
++ 
++	$p = cartItemById($id);
++ 
++	if($p) $p->amount = $amount;
++	else {
++	   $cart[] = (object) [
++		  "id"=>$id,
++		  "amount"=>$amount
++	   ];
++	}
++ 
++	setCart($cart);
++ }
++ 
++ 
++ function getCartItems() {
++	$cart = getCart();
++ 
++	if(!count($cart)) {
++	   return [];
++	}
++ 
++	$ids = implode(",",array_map(function($o){return $o->id;},$cart));
++ 
++	$products = MYSQLIQuery("
++	   SELECT *
++	   FROM `products`
++	   WHERE `id` IN ($ids)
++	");
++ 
++	return array_map(function($db_product)use($cart) {
++	   $cart_product = cartItemById($db_product->id);
++	   $db_product->amount = $cart_product->amount;
++	   $db_product->total = $cart_product->amount * $db_product->price;
++	   return $db_product;
++	},$products);
++ }
++ 
++ 
++ 
++ function makeCartBadge() {
++	$cart = getCart();
++	return count($cart)==0 ? "" :
++	   array_reduce($cart,function($r,$o){return $r+$o->amount;},0);
++ }
+\ No newline at end of file
+diff --git a/yao.yun/parts/navbar.php b/yao.yun/parts/navbar.php
+index 9e705f8..417ad63 100644
+--- a/yao.yun/parts/navbar.php
++++ b/yao.yun/parts/navbar.php
+@@ -14,6 +14,7 @@
+                  <li><a href="ourstory.php">OUR STORY</a></li>
+                  <li><a href="cafe.php">CAFÉ</a></li>
+                  <li><a href="product_cart.php">CART</a></li>
++                 <span class="badge"><?= makeCartBadge() ?></span>
+               </ul>
+               
+            </nav>
+diff --git a/yao.yun/parts/templates.php b/yao.yun/parts/templates.php
+index cc9d7d2..7d811a9 100644
+--- a/yao.yun/parts/templates.php
++++ b/yao.yun/parts/templates.php
+@@ -5,7 +5,7 @@ return $r.<<<HTML
+ <div class="col-xs-12 col-sm-6 col-md-4">
+    <a href="product_item.php?id=$o->id" class="product">
+       <div class="product-image">
+-         <img src="$o->image_main" alt="">
++         <img src="$o->image_thumb" alt="">
+       </div>
+       <figcaption class="product-caption">
+ 		  
+@@ -17,22 +17,94 @@ return $r.<<<HTML
+ HTML;
+ }
+ 
++function selectAmount($amount=1,$total=10) {
++	$output = "<select name= 'amount'>";
++	for($i=1;$i<$total;$i++){
++		$output .= "<option".($i==$amount?'selected':'').">$i</option>";
++	}
++	$output .= "</select>";
++	return $output;
++}
+ 
++function makeCartList($r,$o) {
++   $totalfixed	= number_format($o->total,2,'.','');
++   $amountselect = selectAmount($o->amount,10);
++   
++      return $r.<<<HTML
++      <div class="display-flex cart-section">
++         <div class="flex-none image-thumbs">
++            <img src="$o->image_thumb">
++         </div>
++         <div class="flex-stretch">
++            <p>$o->name</p>
++            <form action="product_actions.php?crud=delete-cart-item" method="post" style="font-size:0.8em">
++               <input type="hidden" name="id" value="$o->id">
++               <input class="form-button inline" type="submit" value="delete">
++            </form>
++         </div>
++         <div class="flex-none">
++            <p>&dollar;$totalfixed</p>
++            <form action="product_actions.php?crud=update-cart-item" method="post" onchange="this.submit()" style="font-size:0.8em">
++               <input type="hidden" name="id" value="$o->id">
++               <div class="form-select">
++                  $amountselect
++               </div>
++            </form>
++         </div>
++      </div>
++      HTML;
++   }
+ 
+ 
+-function makeCartList($r,$o) {
+-return $r.<<<HTML
+-<div class="display-flex">
+-   <div class="flex-none image-thumbs">
+-      <img src="img/store/$o->image_main">
+-   </div>
+-   <div class="flex-stretch">
+-      <strong>$o->name</strong>
+-      <div>Delete</div>
+-   </div>
+-   <div class="flex-none">
+-      &dollar;$o->price
+-   </div>
+-</div>
+-HTML;
+-}
+\ No newline at end of file
++   function makeCondensedCartList($r,$o) {
++      $totalfixed = number_format($o->total,2,'.','');
++      $amountselect = selectAmount($o->amount,10);
++      return $r.<<<HTML
++      <div class="display-flex card-section">
++
++         <div class="flex-stretch">
++            <strong>$o->name</strong>
++         </div>
++         <div class="flex-none">
++            <div>&dollar;$totalfixed</div>
++         </div>
++      </div>
++      HTML;
++      }
++
++   function cartTotals() {
++      $cart = getCartItems();
++      
++      $cartprice = array_reduce($cart,function($r,$o){return $r+$o->total;},0);
++      
++      $pricefixed = number_format($cartprice,2,".","");
++      $tax = number_format($cartprice*0.0275,2,".","");
++      $taxed = number_format($cartprice*1.0275,2,".","");
++      
++      return <<<HTML
++         <div class="display-flex cart-section">
++            <div class="flex-stretch">
++               <h6>Sub Total</h6>
++            </div>
++            <div class="flex-none">
++               <p>&dollar;$pricefixed</p>
++            </div>
++         </div>
++         <div class="display-flex cart-section">
++            <div class="flex-stretch">
++               <h6>Taxes</h6>
++            </div>
++            <div class="flex-none">
++               <p>&dollar;$tax</p>
++            </div>
++         </div>
++         <div class="display-flex cart-section">	
++            <div class="flex-stretch">
++               <h6>Total</h6>
++            </div>
++            <div class="flex-none">
++               <p>&dollar;$taxed</p>
++            </div>
++         </div>
++    HTML;  
++   }
+\ No newline at end of file
+diff --git a/yao.yun/product_actions.php b/yao.yun/product_actions.php
+new file mode 100644
+index 0000000..bd20113
+--- /dev/null
++++ b/yao.yun/product_actions.php
+@@ -0,0 +1,28 @@
++<?php
++
++include_once "lib/php/functions.php";
++
++switch($_GET['crud']) {
++   case "add-to-cart":
++      addToCart($_POST['id']*1,$_POST['amount']*1);
++      header("location:product-added-to-cart.php?id=".$_POST['id']);
++      break;
++   case "update-cart-item":
++      $p = cartItemById($_POST['id']);
++      $p->amount = $_POST['amount'];
++      header("location:cart.php");
++      break;
++   case "delete-cart-item":
++      $cart = array_filter(getCart(),function($o){
++         return $o->id!=$_POST['id'];
++      });
++      setCart($cart);
++      header("location:cart.php");
++      break;
++   case "reset-cart":
++      resetCart();
++      header("location:confirmation-page.php");
++      break;
++   default: die("Incorrect Action");
++}
++?>
+\ No newline at end of file
+diff --git a/yao.yun/product_added_to_cart.php b/yao.yun/product_added_to_cart.php
+index f76d6c2..a36769f 100644
+--- a/yao.yun/product_added_to_cart.php
++++ b/yao.yun/product_added_to_cart.php
+@@ -6,7 +6,10 @@ $product = MYSQLIQuery("
+ 	SELECT *
+ 	FROM `products`
+ 	WHERE `id` = {$_GET['id']}
+-	")[0];
++    ")[0];
++    $cart_product = cartItemById($product->id);
++
++    //pretty_dump($product);
+ 
+ ?>
+ <!DOCTYPE html>
+@@ -14,19 +17,31 @@ $product = MYSQLIQuery("
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Our Story</title>
++    <title>Added To Cart</title>
++
+     <?php include "parts/meta.php" ?>
+ </head>
+ <body>
++
+ <?php include "parts/navbar.php" ?>
++
+ <div class="container">
+     <div class="card soft">
++               <?php
++				if(!isset($_GET['id'])) {
++					echo "go back";
++					} else {
++				?>
+         <h3> You have added <?= $product->name ?> to your cart</h3>
++
+ <div class="display-flex">
+-    <div class="flex-none"><a href="product_list.php">Continue Shopping</a></div>
++    <div class="flex-none"><a class="form-button" href="javascript:window.history.back();">Back To Product</a></div>
+     <div class="flex-stretch"></div>
+-    <div class="flex-none"><a href="product_cart.php">Check Out</a></div>
++    <div class="flex-none"><a class="form-button" href="product_cart.php">Check Out</a></div>
+ </div>
++                <?
++                    }
++                ?>
+     </div>
+ </div>
+ </body>
+diff --git a/yao.yun/product_cart.php b/yao.yun/product_cart.php
+index e69de29..acf7c33 100644
+--- a/yao.yun/product_cart.php
++++ b/yao.yun/product_cart.php
+@@ -0,0 +1,79 @@
++<?php
++
++include_once "lib/php/functions.php";	
++include_once "parts/templates.php";	
++
++$cart = getCartItems();
++
++
++?>
++<!DOCTYPE html>
++<html lang="en">
++<head>
++	<meta charset="UTF-8">
++	<title>Cart</title>
++
++	<?php include "parts/meta.php"; ?>
++</head>
++<body>
++	
++	<?php include "parts/navbar.php"; ?>
++
++	<div class="container">
++		<h2>My Cart</h2>
++		<div class="grid gap">
++			<div class="col-xs-12 col-md-8">
++				<div class="card soft flat">
++
++				<?php
++
++                if(!count($cart)){
++	            echo "<h6>No Items in Your Cart</h6>";
++                 }
++                 else {
++                  echo array_reduce($cart,'makeCartList');
++                 }
++
++                 ?>
++
++				</div>
++			</div>
++			<!-- <div class="col-xs-12 col-md-5">
++				<div class="card soft flat">
++					<div class="card-section display-flex">
++						<div class="flex-stretch"><strong>Sub Total</strong></div>
++						<div class="flex-none">&dollar;####</div>
++					</div>
++					<div class="card-section display-flex">
++						<div class="flex-stretch"><strong>Taxes</strong></div>
++						<div class="flex-none">&dollar;####</div>
++					</div>
++					<div class="card-section display-flex">
++						<div class="flex-stretch"><strong>Total</strong></div>
++						<div class="flex-none">&dollar;####</div>
++					</div>
++					<div class="card section display-flex">
++						<a href="product_checkout.php" class="form-button">Checkout</a>    
++					</div>
++				</div>
++			</div>
++		</div>
++	</div>
++
++</body>
++</html> -->
++<div class="col-xs-12 col-md-4">
++            <div class="card soft flat">
++               <div class="card-section display-flex">
++                  <h2>Confirm Cart</h2>
++               </div>
++               <?= cartTotals() ?>
++               <div class="card-section display-flex">
++                  <a class="form-button" href="checkout.php">Checkout</a>
++               </div>
++            </div>
++         </div>
++      </div>
++   </div>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/yao.yun/product_checkout.php b/yao.yun/product_checkout.php
+new file mode 100644
+index 0000000..bf55b74
+--- /dev/null
++++ b/yao.yun/product_checkout.php
+@@ -0,0 +1,87 @@
++
++<!DOCTYPE html>
++<html lang="en">
++<head>
++	<meta charset="UTF-8">
++	<title>Checkout Page</title>
++
++	<?php include "parts/meta.php"; ?>
++</head>
++<body>
++	
++	<?php include "parts/navbar.php"; ?>
++
++	<div class="container">
++		<div class="card soft">
++			<h2>Product Checkout</h2>
++
++			<form class="form">
++				<h3>Address</h3>
++				<div class="form-control">
++					<label for="address-street" class="form-label">Street</label>
++					<input id="address-street" type="text" placeholder="Street name" class="form-input">
++				</div>
++				<div class="form-control">
++					<div class="grid gap">	
++						<div class="col-xs-12 col-md-6">
++							<label for="address-city" class="form-label">City</label>
++							<input id="address-city" type="text" placeholder="City" class="form-input">
++						</div>
++					<div class="col-xs-12 col-md-6">
++						<label for="address-state" class="form-label">State</label>
++						<input id="address-state" type="text" placeholder="State" class="form-input">
++					</div>
++				</div>
++			</div>
++			<div class="form-control">
++				<div class="grid gap">
++					<div class="col-xs-12 col-md-6">
++						<label for="address-zip" class="form-label">Zip Code</label>
++						<input id="address-zip" type="text" placeholder="Zip Code" class="form-input">
++					</div>
++					<div class="col-xs-12 col-md-6">
++						<label for="address-country" class="form-label">Country</label>
++						<input id="address-country" type="text" placeholder="Country" class="form-input">
++					</div>
++				</div>
++			</div>
++
++			<h3>Payment</h3>
++			<div class="form-control">
++				<label for="payment-name" class="form-label">Full Name</label>
++				<input id="payment-name" type="text" placeholder="Name" class="form-input">
++			</div>
++			<div class="form-control">
++				<label for="payment-number" class="form-label">Card Number</label>
++				<input id="payment-number" type="text" placeholder="####-####-####-####" class="form-input">
++			</div>
++			<div class="form-control">
++				<div class="grid gap">
++					<div class="col-xs-12 col-md-6">
++						<label for="payment-expiration" class="form-label">Expiration</label>
++						<input id="payment-expiration" type="text" placeholder="MM/YY" class="form-input">
++					</div>
++					<div class="col-xs-12 col-md-6">
++						<label for="payment-cvv" class="form-label">CVV</label>
++						<input id="payment-cvv" type="text" placeholder="CVV" class="form-input">
++					</div>
++				</div>
++			</div>
++			<div class="form-control">
++				<label for="payment-zip" class="form-label">Zip Code</label>
++				<input id="payment-zip" type="text" placeholder="Zip Code" class="form-input">
++			</div>
++			<div class="form-control">
++				<label for="payment-zip" class="form-label">Zip Code</label>
++				<input id="payment-zip" type="text" placeholder="Zip Code" class="form-input">
++			</div>
++			<div class="form-control">
++				<!-- <input type="submit" class="form-button" value="Submit"> -->
++				<a href="product_comfirmation.php" class="form-button">Complete Checkout</a>
++			</div>
++		</form>
++	</div>
++</div>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/yao.yun/product_item.php b/yao.yun/product_item.php
+index 26fcc2b..5075a6f 100644
+--- a/yao.yun/product_item.php
++++ b/yao.yun/product_item.php
+@@ -14,6 +14,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
+ });
+ 
+ ?>
++
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+@@ -50,11 +51,10 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
+ 		</div>
+ 	</div>
+ 
+-<br>
+ <hr>
+-<br>
++<div class="container" style="padding:5em"></div>
+ 
+-	<h2>Similar profile</h2>
++	<h2>Similar product</h2>
+ 		<div class="container">
+ 
+ 			<div class="grid gap product-list">
+diff --git a/yao.yun/product_list.php b/yao.yun/product_list.php
+index 47b228a..ee82f44 100644
+--- a/yao.yun/product_list.php
++++ b/yao.yun/product_list.php
+@@ -3,12 +3,17 @@
+ include "lib/php/functions.php";
+ include "parts/templates.php";
+ 
++$_SESSION['num'] = isset($_SESSION['num']) ?
++   $_SESSION['num']+1 :
++   0;
++
++
++
+ ?>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<title>product list</title>
+-
+ 	<?php include "parts/meta.php" ?>
+ </head>
+ <body>
