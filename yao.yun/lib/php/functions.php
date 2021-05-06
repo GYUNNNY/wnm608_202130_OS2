@@ -1,5 +1,8 @@
 <?php
 
+session_start();
+
+
 function pretty_dump($data) {
    echo "<pre>",var_dump($data),"</pre>";
 }
@@ -39,3 +42,74 @@ function MYSQLIQuery($sql) {
 	
 	return $a;
 }
+
+
+
+// CART FUNCTIONS
+
+function array_find($array,$fn) {
+	foreach($array as $o) if($fn($o)) return $o;
+	return false;
+ }
+ 
+ function getCart() {
+	return isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
+ }
+ 
+ function setCart($a) {
+	$_SESSION['cart'] = $a;
+ }
+ 
+ function resetCart() { setCart([]); }
+ 
+ function cartItemById($id) {
+	return array_find(getCart(),function($o)use($id){ return $o->id==$id; });
+ }
+ 
+ function addToCart($id,$amount) {
+	$cart = getCart();
+ 
+	$p = cartItemById($id);
+ 
+	if($p) $p->amount = $amount;
+	else {
+	   $cart[] = (object) [
+		  "id"=>$id,
+		  "amount"=>$amount
+	   ];
+	}
+ 
+	setCart($cart);
+ }
+ 
+ 
+ function getCartItems() {
+	$cart = getCart();
+ 
+	if(!count($cart)) {
+	   return [];
+	}
+ 
+	$ids = implode(",",array_map(function($o){return $o->id;},$cart));
+ 
+	$products = MYSQLIQuery("
+	   SELECT *
+	   FROM `products`
+	   WHERE `id` IN ($ids)
+	");
+ 
+	return array_map(function($db_product)use($cart) {
+	   $cart_product = cartItemById($db_product->id);
+	   $db_product->amount = $cart_product->amount;
+	   $db_product->total = $cart_product->amount * $db_product->price;
+	   return $db_product;
+	},$products);
+ }
+ 
+ 
+ 
+ function makeCartBadge() {
+	$cart = getCart();
+	return count($cart)==0 ? "" :
+	   array_reduce($cart,function($r,$o){return $r+$o->amount;},0);
+ }

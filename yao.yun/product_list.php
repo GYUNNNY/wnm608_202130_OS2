@@ -8,6 +8,11 @@ include "parts/templates.php";
 <html lang="en">
 <head>
 	<title>product list</title>
+	<meta name="viewport" content="width=device-width">	
+	<link rel="stylesheet" href="lib/css/styleguide.css">
+	<link rel="stylesheet" href="lib/css/gridsystem.css">
+	<link rel="stylesheet" href="css/storetheme.css">
+
 
 	<?php include "parts/meta.php" ?>
 </head>

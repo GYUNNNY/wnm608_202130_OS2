@@ -14,6 +14,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 });
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,11 +51,10 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 		</div>
 	</div>
 
-<br>
 <hr>
-<br>
+<div class="container" style="padding:5em"></div>
 
-	<h2>Similar profile</h2>
+	<h2>Similar product</h2>
 		<div class="container">
 
 			<div class="grid gap product-list">

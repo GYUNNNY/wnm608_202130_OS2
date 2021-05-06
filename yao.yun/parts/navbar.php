@@ -14,6 +14,7 @@
                  <li><a href="ourstory.php">OUR STORY</a></li>
                  <li><a href="cafe.php">CAFÉ</a></li>
                  <li><a href="product_cart.php">CART</a></li>
+                 <span class="badge"><?= makeCartBadge() ?></span>
               </ul>
               
            </nav>

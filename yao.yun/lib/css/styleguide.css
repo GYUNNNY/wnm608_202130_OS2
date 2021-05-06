@@ -1,4 +1,4 @@
-
+/*CSS RESETS*/
 *, *::before, *::after {
     box-sizing:border-box;
  }
@@ -25,7 +25,7 @@
     --color-black:#161622;
  
  
-    --header-height:4rem;
+    --header-height:3rem;
  
  
     --font-sans: Helvetica, Source sans pro, sans-serif;
@@ -49,13 +49,13 @@
     font-family:var(--font-serif);
  }
  h1 {
-    text-align: center;
+    text-align: left;
     font-size:2.5em;
     font-family: playfair display;
     color: var(--color-main-dark);
  }
  h2 {
-    text-align: center;
+    text-align: left;
     font-size:2.3em;
     font-family: playfair display;
     color: var(--color-main-dark);
@@ -63,26 +63,26 @@
  h3{
     
     font-size:2em;
-    text-align: center;
+    text-align: left;
     font-family: source sans pro;
     color: var(--color-main-dark);
  }
  h4 {
-    text-align: center;
+    text-align: left;
     font-size:1.5em;
     font-family: source sans pro;
     color: var(--color-main-dark);
     margin:1em 0;
  }
  h5 {
-    text-align: center;
+    text-align: left;
     font-size:1.3em;
     font-family: source sans pro;
     color: var(--color-main-dark);
     margin:1em 0;
  }
  h6 {
-    text-align: center;
+    text-align: left;
     font-size:1em;
     font-family: source sans pro;
     color: var(--color-main-dark);
@@ -90,7 +90,7 @@
  }
  
  a {
-    color:var(--color-main-dark);
+    color: inherit;
     font-weight:normal;
     text-decoration:none;
  }
@@ -105,12 +105,19 @@
  
  /* LAYOUT CLASSES */
  .container {
-    max-width:1000px;
+    max-width:1500px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 0.5em;
-    padding-left: 1em;
+   
  }
+
+ .quote {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 6em 0 3em 0;
+
+}
+
 
  
  .hidden { display:none; }
@@ -193,11 +200,14 @@
  
  
  /* Navbar */
- .navbar {
-    background-color:var(--color-sub-medium);
-    color:var(--color-white);
-    line-height:var(--header-height);
- }
+.navbar {
+      background-color:var(--color-sub-medium);
+      color:var(--color-white);
+      line-height:var(--header-height);
+   }
+   .navbar a {
+      display: block;
+   }
 
  .navbar h1 {
     font-family:var(--font-sans);
@@ -206,10 +216,6 @@
     margin:0;
  }
  
- .navbar a {
-    display:block;
-    padding:0 0.5em;
- }
  
  
  
@@ -244,11 +250,9 @@
  
  .card {
     background-color:var(--color-white);
-    padding:2em;
- 
+    padding:2em; 
     margin-bottom:1em;
-    margin-top:1em;
- 
+    margin-top:10em;
     position:relative;
     overflow:hidden;
  }
