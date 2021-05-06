@@ -3,17 +3,17 @@
 include "lib/php/functions.php";
 include "parts/templates.php";
 
+$_SESSION['num'] = isset($_SESSION['num']) ?
+   $_SESSION['num']+1 :
+   0;
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>product list</title>
-	<meta name="viewport" content="width=device-width">	
-	<link rel="stylesheet" href="lib/css/styleguide.css">
-	<link rel="stylesheet" href="lib/css/gridsystem.css">
-	<link rel="stylesheet" href="css/storetheme.css">
-
-
 	<?php include "parts/meta.php" ?>
 </head>
 <body>

@@ -89,6 +89,8 @@ body {
         box-shadow:0 0 15px rgba(0,0,0,0.3);
      }
      .product-image img {
+      position: absolute;
+      object-fit: cover;
          max-width:100%;
          vertical-align:middle;
      }
@@ -116,7 +118,7 @@ body {
      }
 
      .image-main img {
-        position: absolute;
+        position: relative;
         top: 0;
         left: 0;
         width: 100%;
@@ -141,11 +143,11 @@ body {
         height:100%;
      }
 
-     .card-section {
+     /* .card-section {
       margin-top: 1em;
       padding-top: 1em;
    
-   }
+   } */
 
    
 
@@ -165,14 +167,13 @@ body {
    .navbar .badge:empty {
       display:none;
    }
-     
-   media (max-width:1800px) {
+  
+   @media (max-width:1000px) {
       .container {
          padding-left: 10px;
          padding-right: 10px;
+      }
    }
-   }
-   
    
    @media (max-width:500px) {
       :root {

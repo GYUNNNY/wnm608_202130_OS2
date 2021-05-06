@@ -111,12 +111,12 @@
    
  }
 
- .quote {
+ /* .quote {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 6em 0 3em 0;
 
-}
+} */
 
 
  
@@ -252,7 +252,7 @@
     background-color:var(--color-white);
     padding:2em; 
     margin-bottom:1em;
-    margin-top:10em;
+    margin-top:1em;
     position:relative;
     overflow:hidden;
  }
