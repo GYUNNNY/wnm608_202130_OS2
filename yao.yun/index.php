@@ -8,6 +8,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,24 +20,8 @@
 </head>
 <body>
    <header class="navbar">
+      
    <?php include "parts/navbar.php" ?> 
-        <!-- <div class="container display-flex">
-           <div class="logo flex-none">
-              <a href="index.php">
-                 <img src="images/logo.png" width="200px">
-               </a>
-           </div>
-
-           <nav class="nav flex-none">
-              <ul class="display-flex">
-                 <li><a href="#article1">SHOP</a></li>
-                  <li><a href="#article3">OUR STORY</a></li>
-                 <li><a href="#article4">CAFÉS</a></li>
-                 <li><a href="#article4">CART</a></li>
-              </ul>
-           </nav>
-        </div> -->
-   </header>
 
    <div class="view-window"  style="background-image: url('images/c4.jpg')">
       <h2>PRODUCT</h2>

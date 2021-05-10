@@ -24,19 +24,22 @@
     --color-white:#fff;
     --color-black:#161622;
  
+    --color-text-light:#726359;
+    --color-text-dark:#413933;
+ 
  
     --header-height:3rem;
  
  
-    --font-sans: Helvetica, Source sans pro, sans-serif;
-    --font-serif: Playfair Display, serif;
+    --font-sans: 'Lato', Source sans pro, sans-serif;
+    --font-serif: 'Playfair Display', serif;
  }
  
  body {
     
     margin:0;
     font-size:100%;
-    font-family: playfair display;
+   
     line-height: 1.5em;
  }
  
@@ -169,8 +172,8 @@
     padding:0.2em 0.5em;
  }
  .nav a:hover {
-    background-color:var(--color-main-medium);
-    color:var(--color-white);
+    /* background-color:var(--color-main-medium); */
+    color:var(--color-text-dark);
     text-decoration:none;
  }
  
@@ -201,9 +204,12 @@
  
  /* Navbar */
 .navbar {
-      background-color:var(--color-sub-medium);
-      color:var(--color-white);
+      background-color:var(--color-neutral-lighter);
+      color:var(--color-text-light);
       line-height:var(--header-height);
+      font-family:var(--font-sans);
+      font-size:0.9em;
+   
    }
    .navbar a {
       position: relative;

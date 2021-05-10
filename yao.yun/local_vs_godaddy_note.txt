@@ -1,4 +1,10 @@
 /Applications/MAMP/Library/bin/mysql -u root -p
+    root
+    use yyao31_wnm608
+    # https://www.w3schools.com/sql/sql_select.asp
+
+0. use the MAMP
+    localhost:8888/index.php
 
 1. ./parts/meta.php
     - <!-- <base href="/aau/wnm608/yao.yun/"> -->

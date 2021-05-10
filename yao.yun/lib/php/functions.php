@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+//session_start();
 
 function pretty_dump($data) {
    echo "<pre>",var_dump($data),"</pre>";
@@ -15,6 +15,7 @@ function file_get_json($filename) {
 // DATABASE CONNECTION
 function MYSQLIConn(){
 	include_once "data/auth.php";
+	// include_once "data/local_auth.php";
 
 	@$conn = new mysqli(...MYSQLIAuth());
 
@@ -113,4 +114,8 @@ function array_find($array,$fn) {
 	$cart = getCart();
 	return count($cart)==0 ? "" :
 	   array_reduce($cart,function($r,$o){return $r+$o->amount;},0);
+ }
+
+ function setDefault($k,$v){
+	if(!isset($_GET[$k])) $_GET[$k] = $v;
  }

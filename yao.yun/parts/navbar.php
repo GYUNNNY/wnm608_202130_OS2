@@ -2,7 +2,7 @@
         <div class="container display-flex flex-aligh-center">
            <div class="logo flex-none">
               <a href="index.php">
-                 <img src="images/logo.png" width="200px">
+                 <img src="images/logo.png" width="200px" style="margin-top: 15px;">
                </a>
            </div>
 
