@@ -1,6 +1,6 @@
 <?php
 
-//session_start();
+session_start();
 
 function pretty_dump($data) {
    echo "<pre>",var_dump($data),"</pre>";
