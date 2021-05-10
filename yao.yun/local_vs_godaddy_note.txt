@@ -1,0 +1,11 @@
+/Applications/MAMP/Library/bin/mysql -u root -p
+
+1. ./parts/meta.php
+    - <!-- <base href="/aau/wnm608/yao.yun/"> -->
+    - local: <!-- <base href="."> -->
+
+2. ./lib/php/functions.php
+    - godaddy
+        //include_once "data/auth.php";
+	- local
+        include_once "data/local_auth.php";
