@@ -3,14 +3,11 @@
 
 include "lib/php/functions.php";
 include "parts/templates.php";
+include "data/api.php";
 
 
+$product = makeStatement("product_by_id")[0];
 
-$product = MYSQLIQuery("
-	SELECT *
-	FROM `products`
-	WHERE `id` = {$_GET['id']}
-	")[0];
 
 $thumbs = explode(",", $product->image_main);
 

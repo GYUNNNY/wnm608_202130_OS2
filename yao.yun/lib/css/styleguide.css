@@ -392,6 +392,7 @@
  }
  
  .form-label {
+    font-family: var(--font-sans);
      margin: 0.5em 0;
      display: inline-block;
      font-size: 0.8em;
@@ -438,7 +439,8 @@
     border-width:0;
     background-color:var(--color-neutral-light);
     padding:0.5em 1em;
-    border-radius:2em;
+    border-radius:0.5em;
+    font-family: var(--font-sans);
     font:inherit;
     outline:0;
     -webkit-appearance:none;
@@ -455,7 +457,7 @@
  
  
  
- /
+ 
  .form-select {
     position: relative;
  }
@@ -465,7 +467,8 @@
     border-width:0;
     background-color:var(--color-neutral-light);
     padding:0.5em 2em 0.5em 1em;
-    border-radius:0.3em;
+    border-radius:0.5em;
+   font-family:var(--font-sans);
     font:inherit;
     outline:0;
     position:relative;
@@ -473,11 +476,11 @@
     -webkit-appearance:none;
  }
  .form-select::after {
-    position:absolute;
+    position: absolute;
     top:50%;
     right:0.5em;
     content:'▼';
-    font-family:arial;
+    font-family:var(--font-sans);
     font-size:0.9em;
     color:var(--color-neutral-dark);
     pointer-events:none;
