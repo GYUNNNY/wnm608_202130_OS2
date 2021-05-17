@@ -19,7 +19,6 @@
    
 </head>
 <body>
-   <header class="navbar">
       
    <?php include "parts/navbar.php" ?> 
 
@@ -27,17 +26,13 @@
       <h2>PRODUCT</h2>
    </div>
 
-   <div class="container_img hot">
+   <div class="card">
       <h4>QUALITY COFFEE BEANS ROASTED DAILY</h4>
-      <h6>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-         sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-           irure dolor in reprehenderit in voluptate velit esse cillum dolore</h6>
+      <h6>WE BELIEVE THE COFFEE EXPERIENCE IS OUR RESPONSIBILITY FROM SEED TO CUP. COFFEE IS OUR CRAFT, OUR RITUAL, OUR PASSION. IT DRIVES US AND INSPIRES US. WITH THIS SIMPLE TRUTH AND RESPONSIBILITY WE ARE BRIDGING THE GAP FROM FARMLEVEL TO STREETLEVEL.</h6>
    </div>
    
    
-   <figure class="product">
+  <!--  <figure class="product">
          <div class="product-image">
          
             <img src="images/theme1.jpg" width=50%>
@@ -46,7 +41,44 @@
             
             <div class="product-title">On our SF location</div>
          </figcaption>
-      </figure>   
+   </figure>    -->
+   <div class="imagebar">
+     <div class="slider">
+      <div class="slides">
+         <input type="radio" name="radio-btn" id="radio1">
+         <input type="radio" name="radio-btn" id="radio2">
+         <input type="radio" name="radio-btn" id="radio3">
+         <input type="radio" name="radio-btn" id="radio4">  
+
+         <div class="slide first">
+            <img src="images/shop1.jpg" alt="">
+         </div>
+         <div class="slide">
+            <img src="images/shop4.jpg" alt="">
+         </div>   
+         <div class="slide">
+            <img src="images/shop3.jpg" alt="">
+         </div>   
+         <div class="slide">
+            <img src="images/shop5.jpg" alt="">
+         </div>   
+
+         <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+         </div>      
+      </div>
+       <div class="navigation-manual">
+         <label for="radio1" class="manual-btn"></label>
+         <label for="radio2" class="manual-btn"></label>
+         <label for="radio3" class="manual-btn"></label>
+         <label for="radio4" class="manual-btn"></label>
+       </div>
+     </div>
+    </div>
+
 
    <div class="container">
       <article id="article1" class="article card soft">
@@ -70,24 +102,22 @@
             <p>Quisquam, consequatur. Repellendus doloribus, ullam aspernatur blanditiis, quam fuga earum sunt velit tempora inventore recusandae. Asperiores tenetur exercitationem ullam eveniet, eos ipsa doloremque, error, doloribus soluta hic aliquam tempora omnis sunt ipsam animi, qui commodi libero veritatis quis saepe aperiam.</p>
          </div>
       </article>
-      <article id="article3" class="article card">
-         <h2>Article 3</h2>
-         <div class="article-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deleniti aperiam sunt. Nam nihil iure ipsa consequatur cum aliquid at. Maxime quisquam, animi tempore. Enim ea quia, quos eligendi ullam praesentium tempora, ipsa esse, excepturi eius, dignissimos iure? A, eum.</p>
-            <p>Tempora nulla dicta voluptatibus, corrupti ad quidem mollitia architecto necessitatibus tempore soluta fuga obcaecati cumque totam cum, laudantium molestiae. Consequuntur quo nihil quia libero ratione similique alias eligendi reiciendis labore et nesciunt adipisci aliquid tempora, beatae nobis molestiae quidem. Ipsam.</p>
-            <p>Nesciunt, consequuntur explicabo voluptatem inventore, vitae illum in adipisci aperiam laudantium quos officiis, fugiat velit ex saepe delectus maiores modi a quis, earum esse dolores voluptate facilis provident. Nobis illo eaque, quasi tempora error, autem laudantium necessitatibus architecto magnam quis.</p>
-            <p>Dignissimos itaque eum cumque dolores iste unde illum ipsa architecto, asperiores quasi alias! Soluta sequi voluptatem dolor, consequuntur aut at quas excepturi assumenda amet officiis ipsam temporibus inventore maxime, ipsum ab? Cumque quibusdam tenetur quos nobis? Nam, nesciunt omnis eligendi!</p>
-         </div>
-      </article>
-      
    </div>
 
 <!-- footer start -->
    <?php include "parts/footer.php" ?>
-      <div class="display-flex flex-justify-center top-margin-md bottom-padding-sm">
-         <p class="copyright text-center">Design by Yun Yao 2021 &#169; </p>
-      </div>
-   
    <!-- footer end -->
+    <script>
+      var counter = 1;
+      setInterval(function(){
+         document.getElementById('radio' + counter).checked = true;
+         counter++;
+         if(counter > 4){
+            counter = 1;
+         }
+
+      }, 5000);
+      
+    </script>
 </body>
 </html>

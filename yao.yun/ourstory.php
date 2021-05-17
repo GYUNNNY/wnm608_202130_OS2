@@ -14,5 +14,11 @@ include "parts/templates.php";
 </head>
 <body>
 <?php include "parts/navbar.php" ?>
+
+<div class="conteiner">
+	<div class="view-window"  style="background-image: url('images/pattern.jpg')">
+      <h4>Our Story</h4>
+   </div>
+</div>
 </body>
 </html>

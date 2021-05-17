@@ -58,10 +58,9 @@ if(isset($_GET['t'])) {
 	</div>
 
 
-<div class="container">
-   
-<div class="grid gap">
-	<div class="col-xs-12 col-md-8">
+<div class="container">   
+   <div class="grid gap">
+	 <div class="col-xs-12 col-md-8">
      <form action="product_list.php" method="get" class="hotdog" style="margin-top:2em">
          <input type="hidden" name="t" value="search">
          <input type="hidden" name="d" value="<?=$_GET['d']?>">
@@ -69,9 +68,9 @@ if(isset($_GET['t'])) {
          <input type="hidden" name="l" value="<?=$_GET['l']?>">
          <input type="search" name="s" placeholder="Search" value="<?= $_GET['s'] ?>">
       </form>
-   </div>
+    </div>
 
-   <div class="col-xs-12 col-md-4">
+     <div class="col-xs-12 col-md-4">
       <form action="product_list.php" method="get"  style="margin-top:2em">
          <input type="hidden" name="t" value="search">
          <input type="hidden" name="s" value="<?=$_GET['s']?>">
@@ -86,7 +85,7 @@ if(isset($_GET['t'])) {
       </form>
    </div>
 
-
+</div>
      
    </div>
 <hr>
@@ -113,6 +112,13 @@ if(isset($_GET['t'])) {
 
       </div>
  </div>
+ <div class="container">
+    <div class="card">
+       <a href="admin/index.php">product admin</a>
+    </div>
+ </div>
+
+ <?php include "parts/footer.php" ?>
  
 
 </body>

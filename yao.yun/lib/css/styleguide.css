@@ -545,14 +545,17 @@
    background-color: #362509;
    width: 100%;
    margin-top: 8em;
-   margin-bottom: 2em;
+   margin-bottom: 0;
    overflow: hidden;
 
 
 }
  
 .footerfont {
-   text-align: center;
+    font-family: var(--font-sans);
+    font-size: 3em;
+    color: var(--color-neutral-light);
+ 
    line-height: 2em;
 
 }

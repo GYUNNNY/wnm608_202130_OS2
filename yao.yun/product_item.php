@@ -20,15 +20,15 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 	<title>Product Item</title>
 	<?php include "parts/meta.php" ?>
-
 </head>
+
 <body>
 	<?php include "parts/navbar.php" ?>
 
-	<div class="container">
+	
+<div class="container">
 	<div class="grid gap product-list">
 		<div class="col-xs-12 col-md-6">
 			<figure class="product">
@@ -71,6 +71,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 	</div>
 
 <hr>
+
 <div class="container" style="padding:5em"></div>
 
 	<h2>Similar product</h2>
@@ -92,6 +93,8 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 
 		
 		</div>
-
+	</div>
+</div>
+		<?php include "parts/footer.php" ?>
 </body>
 </html>	
