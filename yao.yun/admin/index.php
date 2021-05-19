@@ -71,7 +71,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 });
 $addoredit = $id=="new" ? 'Add' : 'Edit';
 $createorupdate = $id=="new" ? 'create' : 'update';
-$showvisitlink = $id!="new" ? "<div><a href='product-item.php?id=$id' class='form-button'>Visit</a></div>": "";
+$showvisitlink = $id!="new" ? "<div><a href='product_item.php?id=$product->id' class='form-button'>Visit</a></div>": "";
 
 echo <<<HTML
 <div class="grid gap">
