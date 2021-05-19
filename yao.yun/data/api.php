@@ -76,45 +76,45 @@ function makeStatement($type) {
 
 // CRUD
 case "product_update":
+   pretty_dump("update called");
    $conn = MYSQLIConn();
    $stmt = $conn->prepare("UPDATE `products`
       SET
          `name` = ?,
          `price` = ?,
          `category` = ?,
-         `image_other` = ?,
+         `image_main` = ?,
          `image_thumb` = ?,
          `description` = ?,
-         `quantity` = ?,
          `date_modify` = NOW()
       WHERE `id` = ?
       ");
-   $stmt->bind_param("sdssssii",
+   $stmt->bind_param("sdssssi",
       $_POST['product-name'],
       $_POST['product-price'],
       $_POST['product-category'],
-      $_POST['product-image_other'],
+      $_POST['product-image_main'],
       $_POST['product-image_thumb'],
       $_POST['product-description'],
-      $_POST['product-quantity'],
       $_POST['id']
    );
    $stmt->execute();
    break;
 
 case "product_insert":
+
+   pretty_dump("update called");
    $conn = MYSQLIConn();
    $stmt = $conn->prepare("INSERT INTO `products`
       (
          `name`,
          `price`,
          `category`,
-         `image_other`,
+         `image_main`,
          `image_thumb`,
          `description`,
-         `quantity`,
          `date_create`,
-         `date_modify`,
+         `date_modify`
       )
       VALUES
       (
@@ -124,19 +124,17 @@ case "product_insert":
          ?,
          ?,
          ?,
-         ?,
          NOW(),
-         NOW(),
+         NOW()
       )
       ");
-   $stmt->bind_param("sdssssi",
+   $stmt->bind_param("sdssss",
       $_POST['product-name'],
       $_POST['product-price'],
       $_POST['product-category'],
-      $_POST['product-image_other'],
+      $_POST['product-image_main'],
       $_POST['product-image_thumb'],
-      $_POST['product-description'],
-      $_POST['product-quantity'],
+      $_POST['product-description']
    );
    $stmt->execute();
    return $conn;

@@ -19,12 +19,10 @@ $empty_object = (object) [
    "name"=>"Duromina",
    "price"=>"16.00",
    "category"=>"Single Origin",
-   "image_other"=>"images/product1_t.jpg",
-   "image_thumb"=>"images/product1.jpg",
+   "image_main"=>"images/product1.jpg",
+   "image_thumb"=>"images/product1_t.jpg",
    "description"=>"CRANBERRY · LILAC · SOFT",
-   "quantity"=>"1"
 ];
-
 
 
 switch(@$_GET['crud']) {
@@ -73,7 +71,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 });
 $addoredit = $id=="new" ? 'Add' : 'Edit';
 $createorupdate = $id=="new" ? 'create' : 'update';
-
+$showvisitlink = $id!="new" ? "<div><a href='product-item.php?id=$id' class='form-button'>Visit</a></div>": "";
 
 echo <<<HTML
 <div class="grid gap">
@@ -113,13 +111,8 @@ echo <<<HTML
          <strong>Image Other</strong>
          <div class="image-thumbs">$thumb_elements</div>
       </div>
-      <div>
-         <strong>Quantity</strong>
-         <div>$product->quantity</div>
-      </div>
-      <div>
-         <a href="product_item.php?id=$product->id" class="form-button">Visit</a>
-      </div>
+      
+      $showvisitlink
    </div>
 </div>
 <form class="col-xs-12 col-md-8" method="post" action="{$_SERVER['PHP_SELF']}?id=$id&crud=$createorupdate">
@@ -147,12 +140,8 @@ echo <<<HTML
          <input class="form-input" type="text" id="product-image_thumb" name="product-image_thumb" value="$product->image_thumb">
       </div>
       <div class="form-control">
-         <label class="form-label" for="product-image_other">Image Other</label>
-         <input class="form-input" type="text" id="product-image_other" name="product-image_other" value="$product->image_other">
-      </div>
-      <div class="form-control">
-         <label class="form-label" for="product-quantity">Quantity</label>
-         <input class="form-input" type="number" id="product-quantity" name="product-quantity" value="$product->quantity">
+         <label class="form-label" for="product-image_main">Image Main</label>
+         <input class="form-input" type="text" id="product-image_main" name="product-image_main" value="$product->image_main">
       </div>
       <div class="form-control">
          <input class="form-button" type="submit" value="Submit">
