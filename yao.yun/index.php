@@ -22,26 +22,27 @@
       
    <?php include "parts/navbar.php" ?> 
 
-   <div class="view-window"  style="background-image: url('images/c4.jpg')">
-      <h2>PRODUCT</h2>
+ 
+   <div class="view-window"  style="background-image: url('images/cover2.jpg')">
+     
+      <div class="container">
+         <h5 style="padding-top: 50px";>Free Shipping</h5>
+         <h6 style="font-weight: 400;"> Make it easier than ever to enjoy <br>your favourite coffees at home.</h6>
+         <button class="form-button bold"><a href="product_list.php">Shop Now</a></button>
+       </div>
+    
    </div>
 
+
+
+   <div class="container">
    <div class="card">
-      <h4>QUALITY COFFEE BEANS ROASTED DAILY</h4>
-      <h6>WE BELIEVE THE COFFEE EXPERIENCE IS OUR RESPONSIBILITY FROM SEED TO CUP. COFFEE IS OUR CRAFT, OUR RITUAL, OUR PASSION. IT DRIVES US AND INSPIRES US. WITH THIS SIMPLE TRUTH AND RESPONSIBILITY WE ARE BRIDGING THE GAP FROM FARMLEVEL TO STREETLEVEL.</h6>
+      <h2 style="text-align: center;">Quality Coffee Beans Roasted Daily</h2>
+      <h6 style="font-weight: 400; text-align: center;">We believe the coffee experience is our responsibility from seed to cup. Coffee is our<br> craft, our ritual, our passion. It is what drive and inspires us. With this simple truth and <br>responsibility we are bridging the gap from farm to street.</h6>
+   </div>
    </div>
    
-   
-  <!--  <figure class="product">
-         <div class="product-image">
-         
-            <img src="images/theme1.jpg" width=50%>
-         </div>
-         <figcaption class="product-caption">
-            
-            <div class="product-title">On our SF location</div>
-         </figcaption>
-   </figure>    -->
+
    <div class="imagebar">
      <div class="slider">
       <div class="slides">
@@ -51,7 +52,7 @@
          <input type="radio" name="radio-btn" id="radio4">  
 
          <div class="slide first">
-            <img src="images/shop1.jpg" alt="">
+            <img src="images/shop5.jpg" alt="">
          </div>
          <div class="slide">
             <img src="images/shop4.jpg" alt="">
@@ -60,7 +61,7 @@
             <img src="images/shop3.jpg" alt="">
          </div>   
          <div class="slide">
-            <img src="images/shop5.jpg" alt="">
+            <img src="images/shop8.jpg" alt="">
          </div>   
 
          <div class="navigation-auto">
@@ -78,20 +79,52 @@
        </div>
      </div>
     </div>
+<hr>
 
-
-   <div class="container">
-      <article id="article1" class="article card soft">
-         <h2>Article 1</h2>
-         <div class="article-body">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At rem mollitia cupiditate consectetur dolorem, quaerat. Nihil sunt ullam harum ex id quam ipsum, amet molestiae. Molestias porro, cupiditate, nostrum, a aliquid, expedita alias hic voluptatem similique nihil sunt voluptatum magni!</p>
-            <p>Soluta, nisi ipsam quas accusantium ducimus! Excepturi reprehenderit nulla, similique eligendi consequuntur beatae iste sint cumque corrupti explicabo sequi recusandae quae possimus quaerat, neque ut accusamus dolorem optio cum ullam! Facilis quaerat veritatis laborum, voluptatum a pariatur explicabo ea esse?</p>
-            <p>Incidunt est, modi et! Totam ea odit nobis doloribus deleniti culpa veniam autem perferendis, recusandae sapiente a nam ullam officiis perspiciatis quod dignissimos, in, corrupti quas. Inventore consequatur, quaerat laboriosam quidem velit deleniti totam similique eveniet quisquam dolore maxime, ut!</p>
-            <p>Esse quibusdam officia id, minima obcaecati soluta, expedita in repellendus ex maxime eius dignissimos illo, accusamus delectus unde quos! Quia est, animi iusto sequi qui corrupti molestias sunt expedita, obcaecati, possimus voluptates veniam! Placeat perferendis, ratione vel. Nam, natus optio?</p>
+<div class="container">
+    <div class="grid gap product-list">
+         <div class="col-xs-12 col-md-6">
+            <h1>New Releases</h1>
+            <h6>Our Featured Products</h6>
+             
+      </div>
+         <div class="col-xs-6 col-md-3">
+            <a href="product_item.php?id=9">
+       <figure class="product">
+          <div class="product-image">
+            <img src="images/product9.jpg" alt="">
+          </div>
+         <figcaption class="product-caption">
+            
+            <div class="product-title">Wilder Blend</div>
+            <div class="product-description">RASPBERRY · FIG · REFRESHING</div>
+            <div class="product-price">&dollar;18</div>
+         </figcaption>
+      </a>
+       </figure>
          </div>
-      </article>
-   </div>
+          
+         <div class="col-xs-6 col-md-3">
+            <a href="product_item.php?id=11">
+            <figure class="product">
+               <div class="product-image">
+                 <img src="images/product11.jpg" alt="">
+               </div>
+              <figcaption class="product-caption">
+                 
+                 <div class="product-title">Starlight House Blend</div>
 
+                 <div class="product-description">CHOCOLATE · BLUEBERRY PIE · VELVETY</div>
+                 <div class="product-price">&dollar;19</div>
+              </figcaption>
+           </a>
+            </figure>
+              </div>
+      </div>
+</div>
+<hr>
+
+<!-- 
    <div class="container">
       <article id="article2" class="article card hard">
          <h2>Article 2</h2>
@@ -102,6 +135,98 @@
             <p>Quisquam, consequatur. Repellendus doloribus, ullam aspernatur blanditiis, quam fuga earum sunt velit tempora inventore recusandae. Asperiores tenetur exercitationem ullam eveniet, eos ipsa doloremque, error, doloribus soluta hic aliquam tempora omnis sunt ipsam animi, qui commodi libero veritatis quis saepe aperiam.</p>
          </div>
       </article>
+   </div> -->
+
+ <!-- reviews start -->  
+   <div class="container">
+      <div>
+         <h4 style="padding-top: 2em;">What our customers are saying...</h4>
+      </div>
+       <div class="grid gap product-list">
+
+         <div class="col-xs-12 col-md-4">
+           <div class="saying">   
+                 <img src="images/staricon.png" width="17px">         
+                  <span>"There's no better coffee on Earth than NVR. It's brought our home happiness and our friends enlightenment."</span>               
+               <div class="product-caption">                  
+                  <h6 style="text-align: center;">Ryan G.</h6>            
+               </div>
+           </div>
+         </div>
+
+
+         <div class="col-xs-12 col-md-4">
+            <div class="saying">     
+                 <img src="images/staricon.png" width="17px">      
+                  <span>"I've been subscribed for two years and counting. Their coffee is phenomenal and unmatchable."</span>               
+               <div class="product-caption">                  
+                   <h6 style="text-align: center;">Gina W.</h6> 
+                </div>
+           </div>
+         </div>
+
+         <div class="col-xs-12 col-md-4">
+            <div class="saying">    
+                  <img src="images/staricon.png" width="17px">        
+                  <span>"Your coffee is everything I expected. I can not go back to any other
+                  coffees."</span>               
+               <div class="product-caption">                  
+                  <h6 style="text-align: center;">Huahua L.</h6>            
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+   <!-- reviews end -->
+
+   <div class="container" style="background-image: url(images/pattern.jpg);">
+      <div class="card">
+         
+         <div class="saying" style="border: none; padding-top: 1em; padding-bottom: 2em;">
+         <h2 style="text-align: center;">The Enthusiasm surrounding our coffee</h2>
+         <span>Our goal is to make our coffee a memorable addition to any experience, and <br>to make the act of preparing and enjoying a cup of our coffee an experience in <br>and of itself.
+         </span>
+         </div>
+
+ <div class="grid gap product-list">
+
+         <div class="col-xs-12 col-md-4">
+           <div class="">   
+               <img src="images/theme1.jpg" style="width: 100%; height: 100%;">
+                <div class="imgtext"> 
+               <span>Freshness Guaranteed</span>
+               </div>
+           </div>
+         </div>
+
+
+         <div class="col-xs-12 col-md-4">
+            <div class="">     
+                 <img src="images/shop7.jpg" style="width: 100%; height: 100%;">
+                 <div class="imgtext"> 
+                 <span>We strive for the best</span>
+                 </div>
+           </div>
+         </div>
+
+         <div class="col-xs-12 col-md-4">
+            <div class="">    
+                  <img src="images/shop9.jpg" style="width: 100%; height: 100%;">
+                  <div class="imgtext"> 
+                  <span>In Season</span>
+                  </div>
+            </div>
+         </div>
+      </div>
+
+     
+         <div class="card" style="text-align: center;">
+        <button class="form-button simple"><a href="ourstory.php">Our Story</a></button>
+        </div>
+  
+
+      </div>
    </div>
 
 <!-- footer start -->

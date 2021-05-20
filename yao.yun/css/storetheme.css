@@ -76,7 +76,7 @@ body {
      /* PRODUCT IN LIST */
      .product {
         margin:0;
-        border-radius:0.5em;
+        border-radius: 0;
         position:relative;
         overflow:hidden;
         background-color:var(--color-neutral-lighter);
@@ -92,17 +92,29 @@ body {
       position: relative;
       /* object-fit: cover; */
          max-width:100%;
+
          vertical-align:middle;
      }
      .product-caption {
-        padding:1em;
+        padding-top:1em;
+        padding-left:1em;
+        padding-bottom:1em;
      }
      .product-price {
-        font-size:1.2em;
+        font-size:1em;
+        font-family: var( --font-sans);
      }
      .product-title {
-        font-size:0.9em;
+      font-family: var( --font-sans);
+        font-size:1.2em;
         font-weight: 500;
+     }
+
+     .product-description {
+      font-family: var( --font-sans);
+        font-size:0.7em;
+        font-weight: 300;
+
      }
 
      .product-list .product {
@@ -143,6 +155,27 @@ body {
         height:100%;
      }
 
+     .saying{
+     border: 2px solid #bab399;
+      height:100%;
+      width: 100%;
+      padding-top: 4em;
+      padding-left: 1em;
+      padding-right: 1em;
+
+      text-align: center;
+      font-family: var(--font-sans);
+      color: var(--color-text-light);
+     }
+
+    .imgtext {
+      padding-top: 2em;
+      text-align: center;
+      font-family: var(--font-sans);
+      color: var(--color-text-light);
+    }
+      
+
       .card-section {
       margin-top: 1em;
       padding-top: 1em;
@@ -168,12 +201,19 @@ body {
       display:none;
    }
 
+article {
+    display: block;
+}
+
+
+
    /* galleryslider-start */
 .imagebar {
   display: flex;
   margin: 0;
-  padding: 0;
-  height: 100vh;
+ /* padding-top: 0;
+  padding-bottom: 1em;*/
+  height: 75vh;
   justify-content: center;
   align-items: center;
 }
@@ -185,7 +225,7 @@ body {
   overflow: hidden;
 }*/
 .slider {
-  width: 80%;
+  width: 70%;
   border-radius: 0.8em;
   overflow: hidden;
 }
@@ -220,7 +260,7 @@ body {
  }
 
  .manual-btn {
-  border: 2px solid white;
+  border: 1px solid white;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -259,7 +299,7 @@ body {
 }
 
 .navigation-auto div {
-  border: 2px solid white;
+  border: 1px solid white;
   padding: 5px;
   border-radius: 10px;
 }

@@ -16,12 +16,12 @@ $products = makeStatement("products_admin_all");
 
 
 $empty_object = (object) [
-   "name"=>"Duromina",
-   "price"=>"16.00",
+   "name"=>"Burundi",
+   "price"=>"15.00",
    "category"=>"Single Origin",
-   "image_main"=>"images/product1.jpg",
-   "image_thumb"=>"images/product1_t.jpg",
-   "description"=>"CRANBERRY · LILAC · SOFT",
+   "image_main"=>"images/product14.jpg",
+   "image_thumb"=>"images/product14_t.jpg",
+   "description"=>"LEMON · TURBINADO SUGAR · COCOA",
 ];
 
 

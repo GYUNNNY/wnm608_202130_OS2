@@ -15,10 +15,15 @@ include "parts/templates.php";
 <body>
 <?php include "parts/navbar.php" ?>
 
-<div class="conteiner">
-	<div class="view-window"  style="background-image: url('images/pattern.jpg')">
-      <h4>Our Story</h4>
+
+<div class="view-window" style="background-image: url('images/shop10.jpg');">
+		<div class="container">
+      <h4 style="padding-top: 4em;">Our Story</h4>
    </div>
 </div>
+
+<!-- footer start -->
+   <?php include "parts/footer.php" ?>
+   <!-- footer end -->
 </body>
 </html>

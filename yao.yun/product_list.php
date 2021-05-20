@@ -51,9 +51,8 @@ if(isset($_GET['t'])) {
 	<div class="container">
 		<div class="card">
 
-			<h2>our coffee</h2>
-				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
-                    <br>eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+			<h2> Shop Our coffee</h2>
+				<h6 style="font-weight: 400;">Our coffee is thoughtfully sourced and roasted to order.</h6>
 		</div>
 	</div>
 
