@@ -17,9 +17,13 @@ include "lib/php/functions.php";
       <div class="card soft">
          <h2>Thank you for your purchase!</h2>
 
-         <div>You bought these things</div>
-         <div><a href="product_list.php">Try out these things</a></div>
+         <h5>You will receive a confirmation email shortly</h5>
+         <div class="form-button bold"><a href="product_list.php">Continue Shopping</a></div>
       </div>
    </div>
+
+   <?php
+   resetCart();
+   ?>
 </body>
 </html>

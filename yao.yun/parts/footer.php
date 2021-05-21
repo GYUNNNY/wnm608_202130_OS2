@@ -1,37 +1,51 @@
 
    
-<div class="footer-inner">
-   <div class="container display-flex">
+<div class="footer-inner footerfont">
+   <div class="container">
 		<div class="grid gap">
-			
-           
  
-           <div class="col-sm-6 col-md-3">
-				<h5 style="text-align: left">HELP</h5>
-				<a href="#"><div class="fooderfont">FAQs</div></a>
-				<a href="#"><div class="fooderfont">wholesale</div></a>
-				<a href="#"><div class="fooderfont">return policy</div></a>
-				
-            </div>
- 
-         <div class="col-sm-6 col-md-3">
-				<h5 style="text-align: left">ABOUT</h5>
-				<a href="#"><div class="fooderfont">our story</div></a>
-				<a href="#"><div class="fooderfont">careers</div></a>
-			
-            </div>
-   
-         <div class="col-sm-6 col-md-3">
-				<h5 style="text-align: left">FOLLOW US</h5>
-				<a href="#"><div class="fooderfont">instagram</div></a>
-                <a href="#"><div class="fooderfont">facebook</div></a>
-                <a href="#"><div class="fooderfont">twitter</div></a>
-				
-            </div>
+          <div class="col-xs-12 col-md-3">
+           	<ul>
+				<li><a style="text-align: left">HELP</a></li>
+				<li><a href="#">FAQs</a></li>
+				<li><a href="#">wholesale</a></li>
+				<li><a href="#">order status</a></li>
+				<li><a href="#">return policy</a></li>
+			</ul>
+           </div>
+
+           <div class="col-xs-12 col-md-3">
+           	<ul>
+				<li><a style="text-align: left">ABOUT</a></li>
+				<li><a href="#">our story</a></li>
+				<li><a href="#">careers</a></li>
+				<li><a href="#">blog</a></li>
+			</ul>
+           </div>
+
+           <div class="col-xs-12 col-md-3">
+           	<ul>
+				<li><a style="text-align: left">FOLLOW US</a></li>
+				<li><a href="#">instagram</a></li>
+				<li><a href="#">twitter</a></li>
+				<li><a href="#">facebook</a></li>
+			</ul>
+           </div>
+
+           <div class="col-xs-12 col-md-3">
+           	<ul>
+				<li><a style="text-align: left">HELP</a></li>
+				<li><a href="#">FAQs</a></li>
+				<li><a href="#">wholesale</a></li>
+				<li><a href="#">return policy</a></li>
+			</ul>
+           </div>
+
       </div>
       
    </div>
-      <div class="display-flex flex-justify-center top-margin-md bottom-padding-sm">
+
+      <div class="display-flex flex-justify-center">
          <p class="copyright text-center">Design by Yun Yao 2021 &#169; </p>
       </div>
 </div>

@@ -34,17 +34,22 @@ $product = MYSQLIQuery("
 					echo "You dun goofed";
 					} else {
 				?>
-        <h3> You have added <?= $product->name ?> to your cart</h3>
+        <h2> You have added <?= $product->name ?> to your cart</h2>
 
-<div class="display-flex">
+  <div class="display-flex">
     <div class="flex-none"><a class="form-button" href="javascript:window.history.back();">Back To Product</a></div>
     <div class="flex-stretch"></div>
     <div class="flex-none"><a class="form-button" href="product_cart.php">Check Out</a></div>
-</div>
+  </div>
                 <?
                     }
                 ?>
     </div>
 </div>
+
+<div>
+<?php include "parts/footer.php" ?>
+</div>
+
 </body>
 </html>

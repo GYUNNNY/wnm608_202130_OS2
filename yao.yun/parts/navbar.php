@@ -1,27 +1,30 @@
-   <header class="navbar">
-        <div class="container display-flex flex-aligh-center">
-           <div class="logo flex-none">
+
+
+   <input type="checkbox" class="hidden" id="nav-toggle">
+<header class="navbar">
+   <div class="container display-flex flex-align-center">
+      <div class="flex-none">
+        <div class="logo">
               <a href="index.php">
-                 <img src="images/logo.png" width="200px" style="margin-top: 15px; margin-right: 30px;">
+                 <img src="images/logo.png" width="200px" style="margin-top: 20px;">
                </a>
            </div>
-
-      <div class="flex-none">
-        <nav class="nav">
-              <ul class="display-flex">
-                 <li><a href="product_list.php">SHOP</a></li> 
-                 <li><a href="ourstory.php">OUR STORY</a></li>
-                 <li><a href="cafe.php">CAFÉ</a></li>
-                 <li><a href="product_cart.php">
-                    <span>CART</span>
-                    <span class="badge"><?= makeCartBadge() ?></span>
-                    </a>
-                  </li>                 
-              </ul>        
-        </nav>
-
-        <script>makeNav("nav flex")</script>
-         
-      </div>         
-     </div>
-   </header>
+      </div>
+      <div class="flex-stretch"></div>
+      <div class="flex-none nav-toggle">
+         <label for="nav-toggle">&equiv;</label>
+      </div>
+      <nav class="flex-none nav flex">
+         <ul>
+            
+            <li><a href="product_list.php">SHOP</a></li>
+            <li><a href="ourstory.php">OUR STORY</a></li>
+            <li><a href="cafe.php">CAFÉ</a></li>
+            <li><a href="product_cart.php">
+               <span>CART</span>
+               <span class="badge"><?= makeCartBadge() ?></span>
+            </a></li>
+         </ul>
+      </nav>
+   </div>
+</header>
