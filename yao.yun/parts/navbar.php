@@ -16,10 +16,10 @@
       </div>
       <nav class="flex-none nav flex">
          <ul>
-            
+            <li><a href="index.php">HOME</a></li>
             <li><a href="product_list.php">SHOP</a></li>
             <li><a href="ourstory.php">OUR STORY</a></li>
-            <li><a href="cafe.php">CAFÉ</a></li>
+            <!-- <li><a href="cafe.php">CAFÉ</a></li> -->
             <li><a href="product_cart.php">
                <span>CART</span>
                <span class="badge"><?= makeCartBadge() ?></span>

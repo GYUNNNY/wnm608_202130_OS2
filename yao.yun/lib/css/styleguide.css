@@ -610,6 +610,31 @@
     margin: 0.6em 0;
 
 }
+
+
+
+.subscribe {
+    display: inline-block;
+    width: 100%;
+  
+}
+
+.subscribe h6{
+    color: var(--color-text-lighter);
+    font-weight: 900;
+}
+
+.subscribe .hotdog {
+   
+    margin-bottom: 15px;
+
+}
+
+.subscribe .form-button.bold {
+   
+    width: 100%;
+
+}
  
 .footerfont {
     font-family: var(--font-sans);

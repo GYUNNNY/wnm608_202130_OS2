@@ -31,14 +31,30 @@
 				<li><a href="#">facebook</a></li>
 			</ul>
            </div>
-
+<!-- 
            <div class="col-xs-12 col-md-3">
            	<ul>
-				<li><a style="text-align: left">HELP</a></li>
+				<li><a style="text-align: left">Get the latest from NVR</a></li>
 				<li><a href="#">FAQs</a></li>
 				<li><a href="#">wholesale</a></li>
 				<li><a href="#">return policy</a></li>
 			</ul>
+           </div>
+ -->
+
+
+           <div class="col-xs-12 col-md-3">
+           	<div class="subscribe">
+           		<h6>Get the latest from NVR</h6>
+
+           		 <div class="hotdog">
+           		 	<input type="text" placeholder="Email Sign Up" name="mail" required>
+           		 </div>
+
+           		 <button class="form-button bold" >Join Now</button>
+
+
+           	</div>
            </div>
 
       </div>
