@@ -37,9 +37,9 @@ $product = MYSQLIQuery("
         <h2> You have added <?= $product->name ?> to your cart</h2>
 
   <div class="display-flex">
-    <div class="flex-none"><a class="form-button" href="javascript:window.history.back();">Back To Product</a></div>
+    <div class="flex-none"><button class="form-button"><a href="javascript:window.history.back();">Continue Shopping </a></button></div>
     <div class="flex-stretch"></div>
-    <div class="flex-none"><a class="form-button" href="product_cart.php">Check Out</a></div>
+    <div class="flex-none"><button class="form-button"><a href="product_cart.php">Check Out</a></button></div>
   </div>
                 <?
                     }

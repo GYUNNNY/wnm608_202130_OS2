@@ -18,7 +18,7 @@ include "lib/php/functions.php";
          <h2>Thank you for your purchase!</h2>
 
          <h5>You will receive a confirmation email shortly</h5>
-         <div class="form-button bold"><a href="product_list.php">Continue Shopping</a></div>
+         <button class="form-button"><a href="product_list.php">Continue Shopping</a></button>
       </div>
    </div>
 

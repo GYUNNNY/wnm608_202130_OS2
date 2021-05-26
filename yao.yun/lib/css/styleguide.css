@@ -7,7 +7,7 @@
     --color-neutral-lighter:#f4f2e9;
     --color-neutral-light:#efecdf;
     --color-neutral-medium:#dbd7c3;
-    --color-neutral-dark:#bab399;
+    --color-neutral-dark:#form-controlb399;
  
     --color-main-light: #8ba8b2;
     --color-main-medium: #567f91;
@@ -253,11 +253,29 @@
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
- 
     height:70vh;
  }
  
- 
+ .hero-image {
+  background-image: url('images/shop13.jpg');
+  background-color: var(--color-neutral-lighter);
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+ }
+
+ .hero-text {
+  text-align: center;
+  font-family: var(--font-sans);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-text-dark);
+ }
  
  
  
@@ -361,7 +379,8 @@
  /* Horizontal Rule */
  hr {
     border-width:0;
-    margin:1em 0;
+    margin-top:2em;
+    margin-bottom:1em;
     border-bottom:1px solid var(--color-neutral-medium);
  }
  
@@ -507,6 +526,7 @@
  
  .form-select {
     position: relative;
+
  }
  .form-select>select {
     display:inline-block;
@@ -515,7 +535,7 @@
     background-color:var(--color-neutral-light);
     padding:0.5em 2em 0.5em 1em;
     border-radius:0.5em;
-   font-family:var(--font-sans);
+  
     font:inherit;
     outline:0;
     position:relative;
@@ -528,6 +548,7 @@
     right:0.5em;
     content:'▼';
     font-family:var(--font-sans);
+
     font-size:0.9em;
     color:var(--color-neutral-dark);
     pointer-events:none;
@@ -579,7 +600,7 @@
    display:inline-block;
    width:initial;
    border-width:0;
-   background-color:var(--color-sub-dark);
+   background-color:var(--color-sub-medium);
    padding:auto;
    border-radius:0.3em;
    font:inherit;
@@ -589,12 +610,13 @@
    cursor:pointer;
    transition:all 0.3s;
    font-family:var(--font-sans);
-   color:var(--color-black);
+   color:var(--color-text-dark);
 }
 
  .footer-inner {
    
-   background-color: #362509;
+   /*background-color: #362509;*/
+    background-color: var(--color-text-dark);
    color: var(--color-text-lighter);
    width: 100%;
    height: 40vh;

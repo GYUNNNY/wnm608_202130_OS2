@@ -8,9 +8,9 @@ return $r.<<<HTML
          <img src="$o->image_main" alt="">
       </div>
       <figcaption class="product-caption">
-		  
+		   <div class="product-title">$o->name</div>
          <div class="product-price">&dollar;$o->price</div>
-         <div class="product-title">$o->name</div>
+         
       </figcaption>
    </a>
 </div>
@@ -36,17 +36,17 @@ function makeCartList($r,$o) {
             <img src="$o->image_thumb">
          </div>
          <div class="flex-stretch">
-            <p>$o->name</p>
+            <h6>$o->name</h6>
             <form action="product_actions.php?crud=delete-cart-item" method="post">
                <input type="hidden" name="id" value="$o->id">
                <input class="form-button-white" type="submit" value="delete">
             </form>
          </div>
          <div class="flex-none">
-            <p>&dollar;$totalfixed</p>
+            <h6>&dollar;$totalfixed</h6>
             <form action="product_actions.php?crud=update-cart-item" method="post" onchange="this.submit()">
                <input type="hidden" name="id" value="$o->id">
-               <div class="form-select-product-cart">
+               <div class=" form-select">
                   $amountselect
                </div>
             </form>
@@ -87,7 +87,7 @@ function makeCartList($r,$o) {
                <h6>Sub Total</h6>
             </div>
             <div class="flex-none">
-               <p>&dollar;$pricefixed</p>
+               <h6>&dollar;$pricefixed</h6>
             </div>
          </div>
          <div class="display-flex cart-section">
@@ -95,7 +95,7 @@ function makeCartList($r,$o) {
                <h6>Taxes</h6>
             </div>
             <div class="flex-none">
-               <p>&dollar;$tax</p>
+               <h6>&dollar;$tax</h6>
             </div>
          </div>
          <div class="display-flex cart-section">	
@@ -103,7 +103,7 @@ function makeCartList($r,$o) {
                <h6>Total</h6>
             </div>
             <div class="flex-none">
-               <p>&dollar;$taxed</p>
+               <h6>&dollar;$taxed</h6>
             </div>
          </div>
     HTML;  

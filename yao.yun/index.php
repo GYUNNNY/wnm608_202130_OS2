@@ -180,7 +180,7 @@
    </div>
    <!-- reviews end -->
 
-   <div class="container" style="background-image: url(images/pattern.jpg);">
+   <div class="container">
       <div class="card">
          
          <div class="saying" style="border: none; padding-top: 1em; padding-bottom: 2em;">

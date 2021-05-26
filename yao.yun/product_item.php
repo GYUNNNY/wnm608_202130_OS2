@@ -28,7 +28,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 	<?php include "parts/navbar.php" ?>
 
 	
-<div class="container">
+<div class="container" style="padding:2em">
 	<div class="grid gap product-list">
 		<div class="col-xs-12 col-md-6">
 			<figure class="product">
@@ -45,7 +45,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 				<p><?= $product->description ?></p>
 				<h5>&dollar;<?= $product->price ?></h5>
 				
-			<div class="card">
+			<div class="card soft">
 				<label class="form-label">quantity</label>
 					<div class="form-select">
 						<select name="amount">
@@ -64,7 +64,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 					</div>
 				<button type="submit" class="form-button" value="Add to Cart"> Add to Cart</button>
 				<!-- <a type="button" class="form-button-white" value="Buy Now">Buy Now</a> -->
-				<h5>Roasted and shipped daily</h5>
+				<h6>Roasted and shipped daily</h6>
 				
 			</form>
 		</div>
@@ -72,9 +72,21 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 
 <hr>
 
-<div class="container" style="padding:5em"></div>
+<div class="hero-image" style="background-color: white;">
+    <!-- <img src="images/shop14.jpg"> --> 
+        <div class="hero-text">
+          <img src="images/staricon.png" style="width:15px">
+          <p>We have been sourcing coffee from farms around the world for more than a decade, virtually all of it from the traditional coffee region. Our coffees go through a rigorous selection and quality-testing process, and we only share the coffees that have most captured our imaginations.
 
-	<h2>Similar product</h2>
+</p>
+        </div>
+  </div>
+
+
+
+<div class="container"></div>
+
+	<h3 style="text-align: center;">You might also like</h3>
 		<div class="container">
 
 			<div class="grid gap product-list">

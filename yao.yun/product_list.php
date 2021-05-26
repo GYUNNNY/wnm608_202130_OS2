@@ -70,7 +70,7 @@ if(isset($_GET['t'])) {
     </div>
 
      <div class="col-xs-12 col-md-4">
-      <form action="product_list.php" method="get"  style="margin-top:2em">
+      <form action="product_list.php" method="get" style="margin-top:2em; font-size: 1em">
          <input type="hidden" name="t" value="search">
          <input type="hidden" name="s" value="<?=$_GET['s']?>">
          <input type="hidden" name="d" value="<?=$_GET['d']?>">

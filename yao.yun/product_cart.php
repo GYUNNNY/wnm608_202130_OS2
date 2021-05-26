@@ -39,14 +39,14 @@ $cart = getCartItems();
 				</div>
 			</div>
 			
-<div class="col-xs-12 col-md-4">
+        <div class="col-xs-12 col-md-4">
             <div class="card soft flat">
                <div class="card-section display-flex">
-                  <h2>Confirm Cart</h2>
+                  <h3>Confirm Cart</h3>
                </div>
                <?= cartTotals() ?>
                <div class="card-section display-flex">
-                  <a class="form-button" href="product_checkout.php">Checkout</a>
+                  <button class="form-button"><a href="product_checkout.php">Checkout</a></button>
                </div>
             </div>
          </div>

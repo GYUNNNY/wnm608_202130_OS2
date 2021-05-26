@@ -51,10 +51,13 @@ return $r.<<<HTML
       <div class="flex-none image-thumbs">
          <img src="$product->image_thumb">
       </div>
-      <div class="flex-stretch">$product->name</div>  
+      <div class="flex-stretch">
+      <h6>$product->name</h6>  
+      <h6>$product->price</h6>  
+      </div>
       <div class="flex-none">
-         <a href="{$_SERVER['PHP_SELF']}?id=$product->id" class="form-button">Edit</a>
-         <a href="product_item.php?id=$product->id" class="form-button">Visit</a>
+         <button class="form-button"><a href="{$_SERVER['PHP_SELF']}?id=$product->id">Edit</a></button>
+         <button  class="form-button"><a href="product_item.php?id=$product->id">Visit</a></button>
       </div>  
    </div>
 </div>
@@ -78,9 +81,9 @@ echo <<<HTML
 <div class="col-xs-12">
 <div class="card soft">
 <nav class="nav pills display-flex">
-   <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}"><img src="img/icon/arrow-left.svg" class="icon" style="font-size:1.5em"></a></div>
+   <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}"><img src="images/arrow-left.png" class="icon" style="font-size:1.5em"></a></div>
    <div class="flex-stretch"></div>
-   <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete"><img src="img/icon/trash.svg" class="icon" style="font-size:1.5em"></a></div>
+   <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete"><img src="images/trash.png" class="icon" style="font-size:1.5em"></a></div>
 </nav>
 </div>
 </div>

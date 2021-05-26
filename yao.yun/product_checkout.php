@@ -83,9 +83,9 @@ $cart = getCartItems();
 				<label for="payment-zip" class="form-label">Zip Code</label>
 				<input id="payment-zip" type="text" placeholder="Zip Code" class="form-input">
 			</div>
-			<div class="form-control">
+			<div>
 				<!-- <input type="submit" class="form-button" value="Submit"> -->
-				<a href="product_confirm.php" class="form-button">Complete Checkout</a>
+				<button  class="form-button sell"><a href="product_confirm.php">Complete Checkout</a></button>
 			</div>
 		</form>
 	</div>
