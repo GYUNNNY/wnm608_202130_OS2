@@ -18,7 +18,7 @@ include "parts/templates.php";
 
 <div class="view-window" style="background-image: url('images/shop10.jpg');">	
 		<div class="ourstory-top">
-            <h3 style="padding-top: 4em;">Our Story</h3>
+            <h3 style="padding-top: 4em;">Our Approach</h3>
         </div>    
 </div>
 
@@ -34,47 +34,6 @@ include "parts/templates.php";
 </div>
 
 
-
-<!-- <div class="container">
-
-	<div class="ourstory">
-	  <section>
-      <div class="room-description">
-        <h1>Our Mission</h1>
-       <p>NVR came to be through the serendipitous union of surf, sweat and a love of life and living. In 2013, founder Yun built and opened the first NVR cafe on 60 federal, San Francisco, California. Today, NVR has locations in cities from San Francisco to New York, but our roots remain planted in San Francisco, where we roast our coffee on vintage roasters and enjoy the endless surf of the rugged California coast.</p>
-      </div>
-
-      
-      <div class="room-gallery">
-        <img class="gallery-hightlight" src="images/c4.jpg" alt="room1" />
-        <div class="room-preview">
-          <img src="images/shop14.jpg" class="room-active" alt="" />
-          <img src="images/c4.jpg" alt="" />
-          <img src="images/shop11.jpg" alt="" />
-        </div>
-      </div>
-    </section>
-    
-	<script>
-		function imageGallery() {
-  const highlight = document.querySelector(".gallery-hightlight");
-  const previews = document.querySelectorAll(".room-preview img");
-
-  previews.forEach(preview => {
-    preview.addEventListener("click", function() {
-      const smallSrc = this.src;
-      const bigSrc = smallSrc.replace("small", "big");
-      previews.forEach(preview => preview.classList.remove("room-active"));
-      highlight.src = bigSrc;
-      preview.classList.add("room-active");
-       });
-     });
-   }
-
-   imageGallery();
-	</script>
-	 </div>
-</div> -->
 
 <div class="container">
   <div class="grid grid-justify-around">
@@ -98,7 +57,7 @@ include "parts/templates.php";
   <div class="hero-image">
     <!-- <img src="images/shop14.jpg"> --> 
         <div class="hero-text">
-          <h6 style="font-size: 1em; text-align: center;">How we do it?</h6>
+          <h6 style="font-size: 1em; text-align: center;">How to archive our goal?</h6>
           <h1 style="font-size: 2em; text-align: center;"> Design our product carefully</h1>
           <p>After it arrives from the farm, green coffee is transformed into something beautiful through a meticulous process of roasting, cupping, blending, brewing in our Coffeebars.</p>
         </div>

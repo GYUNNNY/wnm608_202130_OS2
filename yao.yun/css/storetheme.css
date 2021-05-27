@@ -262,7 +262,7 @@ section {
 }
 .tabs li:hover,
 .tabs li.active{
-  color: var(--color-text-dark);
+  color: #ed1665;
 }
 article {
   padding-left: 30px;
@@ -291,7 +291,7 @@ article {
 }*/
 .slider {
   width: 70%;
-  border-radius: 0.8em;
+  border-radius: 0;
   overflow: hidden;
 }
 

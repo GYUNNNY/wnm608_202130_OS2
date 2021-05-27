@@ -1,3 +1,4 @@
+
 /*CSS RESETS*/
 *, *::before, *::after {
     box-sizing:border-box;
@@ -7,7 +8,7 @@
     --color-neutral-lighter:#f4f2e9;
     --color-neutral-light:#efecdf;
     --color-neutral-medium:#dbd7c3;
-    --color-neutral-dark:#form-controlb399;
+    --color-neutral-dark:#b399;
  
     --color-main-light: #8ba8b2;
     --color-main-medium: #567f91;
@@ -29,6 +30,7 @@
     --color-text-light:#726359;
     --color-text-dark:#413933;
  
+    --color-brand-accent: #ed1665;
  
     --header-height:3rem;
  
@@ -435,25 +437,7 @@
      font-size: 0.8em;
      color:var(--color-neutral-medium);
  }
-/* .form-button {
-    display:inline-block;
-    width:80%;
-    border-width:0;
-    background-color:var(--color-neutral-light);
-    padding:0.5em 1em;
-    border-radius:0.3em;
-    font:inherit;
-    outline:0;
-    text-align:center;
-    text-decoration:none;
-    cursor:pointer;
-    transition:all 0.3s;
-    -webkit-appearance:none;
- }*/
-/* .form-button:hover {
-    text-decoration:none;
-    box-shadow:0 0 10px var(--color-neutral-light);
- }*/
+
  .form-button:active {
     background-color:var(--color-main-light);
  }
@@ -585,6 +569,7 @@
     outline:0;
     transition: all 0.1s ease-in-out;
     -webkit-appearance:none;
+    font-size: 1em;
 
  }
 
